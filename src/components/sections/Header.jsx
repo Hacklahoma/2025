@@ -8,13 +8,13 @@ const Header = () => (
   <div className="header">
     <div className="content">
       <div className="header-text">
-        <h1>Hacklahoma 2022</h1>
+        <h1>Hacklahoma 2023</h1>
         <div className="subcontent">
-          <p>February 12 - 13, 2022</p>
+          <p>TBD Date</p>
           <p className="subtitle">University Of Oklahoma</p>
         </div>
         <div className="registration">
-          Thank you for attending Hacklahoma 2022!
+          Registration will open soon!
           {/*<a href="https://register.hacklahoma.org/">Register Now!</a>*/}
         </div>
       </div>
