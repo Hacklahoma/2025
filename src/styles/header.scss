@@ -1,0 +1,106 @@
+@import './constants';
+
+.header {
+  margin-top: $navbar-height;
+  padding-top: $section-vertical-margin;
+  //background-image: url('../images/hex.svg');
+  //background-blend-mode: darken;
+  //background-size: cover;
+  //background-repeat: repeat-x !important;
+  width: 100vw;
+  color: $blue;
+  
+  .header-logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 96%;
+    width: 20em;
+    height: 20em;
+    float: right;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-text {
+    float: left;
+  }
+
+  .subcontent {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+  }
+
+  .registration {
+    font-family: 'Bebas Neue';
+    height: 45%;
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    a {
+      transition: background-color 0.25s ease;
+      font-size: 2.5rem;
+      background: $blue;
+      color: #fff;
+      padding: 1rem 2.5rem 1rem 2.5rem;
+      border-radius: 12px;
+
+      &:active,
+      &:hover,
+      &.active {
+        background: #01a7c2;
+      }
+    }
+  }
+  
+
+  @media only screen and (max-width: 840px) {
+    .header-logo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 1em;
+      width: 16em;
+      height: 16em;
+      float: right;
+    }
+
+    .registration {
+      a {
+        font-size: 1.75rem;
+      }
+    }
+
+    .subcontent {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    margin-top: $navbar-height-mobile;
+
+    .header-logo {
+      margin-top: .5em;
+      margin-bottom: .5em;
+      margin-left: .5em;
+      width: 10em;
+      height: 10em;
+      float: right;
+    }
+
+    .subcontent {
+      font-size: 1.4rem;
+    }
+
+    .registration {
+      a {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
