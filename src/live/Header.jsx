@@ -6,7 +6,7 @@ import '../styles/header.scss';
  */
 const Header = () => {
   // Feb 6, 2021 @ 12:00pm CST
-  const startDate = new Date('2022-02-12T18:00:00Z');
+  const startDate = new Date('2023-02-11T18:00:00Z');
   // 24hrs after start date
   const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 
@@ -83,7 +83,7 @@ const Header = () => {
               && (
                 <>
                   <div className="time">
-                    <h2>{format(countdown.days)}</h2>
+                    <h2>{countdown.days}</h2>
                     <p>days</p>
                   </div>
                   <h2 className="separator">:</h2>

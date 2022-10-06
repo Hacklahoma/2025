@@ -10,7 +10,7 @@ const Header = () => (
       <div className="header-text">
         <h1>Hacklahoma 2023</h1>
         <div className="subcontent">
-          <p>TBD Date</p>
+          <p>Feb. 11th-12th</p>
           <p className="subtitle">University Of Oklahoma</p>
         </div>
         <div className="registration">
