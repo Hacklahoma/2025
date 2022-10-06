@@ -63,9 +63,9 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Workshop provided by Paycom! (Classroom C or Online)',
+    name:        'Company Workshop 1',
     time:     new Date('2023-02-11T19:00:00Z'),
-    description: 'Paycom will be talking about an introduction to security programs!',
+    description: 'TBD',
     duration: 60,
   },
   {
@@ -74,14 +74,14 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Tech Interviews Tips w/ Fatima Taj (Discord)',
+    name:        'Tech Interviews Tips',
     time:     new Date('2023-02-11T20:45:00Z'),
     duration: 60,
   },
   {
-    name:        'Workshop provided by Baker Hughes! (Classroom A or Online)',
+    name:        'Company Workshop 2',
     time:     new Date('2023-02-11T22:00:00Z'),
-    description: 'Ever wanted to expand your knowledge on how to use the Linux terminal? Well Baker Hughes will be teaching a workshop to help expand your knowledeg and skills on it!',
+    description: 'TBD',
     duration: 90,
   },
   {
@@ -90,8 +90,8 @@ export const times = [
     duration: 90,
   },
   {
-    name:        'Video Game Music Quiz (Activities Room)',
-    description: 'Come to the Forum Room located at DEH 220 to participate in a video game music quiz!',
+    name:        'Fun activity (Activities Room)',
+    description: 'TBD',
     time:     new Date('2023-02-11T23:30:00Z'),
     duration: 60,
   },
@@ -102,7 +102,7 @@ export const times = [
   },
   {
     name:        'Dinner (In-person)',
-    description: 'Pickleman\'s will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    description: 'Food TBD will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
     time:     new Date('2023-02-11T23:45:00Z'),
     duration: 60,
   },
@@ -112,13 +112,13 @@ export const times = [
     duration: 90,
   },
   {
-    name:        'MLH Bob Ross (Discord)',
-    description: 'In this activity you will be following along a Bob Ross video while using MS paint!',
+    name:        'MLH Activity',
+    description: 'TBD',
     time:     new Date('2023-02-12T01:00:00Z'),
     duration: 60,
   },
   {
-    name:        'Digital Escape Room (Discord)',
+    name:        'More fun activities',
     time:     new Date('2023-02-12T01:30:00Z'),
     duration: 60,
   },
@@ -134,7 +134,7 @@ export const times = [
   },
   {
     name:        'Breakfast (In-person)',
-    description: 'Waffles will be served in the Attrium. Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    description: 'Food TBD will be served in the Attrium. Alternatives will be provided to anyone with allergies or dietary restrictions.',
     time:     new Date('2023-02-12T16:00:00Z'),
     duration: 60,
   },
