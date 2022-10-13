@@ -53,7 +53,7 @@ export const times = [
   },
   {
     name:     'Lunch (In-person)',
-    description: 'Slim Chickens will be served in the atrium! Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    description: 'TBD will be served in the atrium! Alternatives will be provided to anyone with allergies or dietary restrictions.',
     time:     new Date('2023-02-11T18:15:00Z'),
     duration: 45,
   },
@@ -69,7 +69,7 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Workshop provided by OU AI! (Classroom B or Online)',
+    name:        'TBD Workshop',
     time:     new Date('2023-02-11T20:45:00Z'),
     duration: 60,
   },
@@ -96,7 +96,7 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'C3 Cyber Security Workshop! (Classroom B or Online)',
+    name:        'TBD Workshop',
     time:     new Date('2023-02-11T23:30:00Z'),
     duration: 60,
   },
@@ -107,7 +107,7 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Workshop provided by Crimson Robotics (Classroom C or Online)',
+    name:        'TBD Workshop',
     time:     new Date('2023-02-12T01:00:00Z'),
     duration: 90,
   },
@@ -123,7 +123,7 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Intro to Game Development using Godot by the Game Developer\'s Accociation',
+    name:        'TBD Workshop',
     time:     new Date('2023-02-12T03:00:00Z'),
     duration: 60,
   },
@@ -149,7 +149,7 @@ export const times = [
     duration: 5,
   },
   {
-    name:     'OU Start Up Workshop (Classroom C)',
+    name:     'TBD Workshop (Classroom C)',
     time:     new Date('2023-02-12T20:00:00Z'),
     duration: 5,
   },
