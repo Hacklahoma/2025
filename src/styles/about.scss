@@ -1,12 +1,12 @@
 @import './constants';
 
+
 .about {
   align-items: center;
   display: flex;
   justify-content: center;
 
   .box {
-    background-color: $light-blue;
     //background-image: url('../images/triangle.svg');
     background-size: 50%;
     align-items: center;
@@ -21,10 +21,13 @@
     width: $content-width;
 
     h3 {
-      color: #fff;
+      color: #333;
+      font-family: newspaper, Serif, serif;
     }
 
     p {
+      color: #333;
+      font-family: "Times New Roman", Serif, serif;
       max-width: 520px;
     }
   }
