@@ -7,8 +7,7 @@
 
   .banner {
     align-items: center;
-    background: $banner-bg-color;
-    color: $banner-color;
+    background: none;
     display: flex;
     font-weight: 600;
     height: $banner-height;
@@ -23,14 +22,14 @@
     }
 
     &:hover {
-      background: $banner-hover-bg-color;
+      background: none;
     }
   }
 
   .navigation {
     .container {
       align-items: center;
-      background: $blue;
+      background-color: #F5F2E8;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
       box-sizing: border-box;
       display: flex;
@@ -95,7 +94,17 @@
         height: 100%;
         text-decoration: none;
       }
-    
+
+      b {
+        font-family: new-york-times, serif;
+        font-size: 4em;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
       #nav-items {
         align-items: center;
         display: flex;
@@ -115,7 +124,7 @@
         }
 
         li {
-          color: #ffffff;
+          color: black;
           align-items: center;
           cursor: pointer;
           display: flex;

@@ -1,6 +1,10 @@
 @import './constants';
-
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .header {
+  animation: fadeIn 5s;
   margin-top: $navbar-height;
   padding-top: $section-vertical-margin;
   //background-image: url('../images/hex.svg');
@@ -8,48 +12,54 @@
   //background-size: cover;
   //background-repeat: repeat-x !important;
   width: 100vw;
-  color: $blue;
-  
+  color: $black;
   .header-logo {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 1.5em;
-    background-image: url('../images/logo.svg');
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/hlogo.jpg');
+    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 96%;
-    width: 20em;
-    height: 20em;
-    float: right;
+    background-size: auto;
+    width: 15em;
+    height: 15em;
   }
 
   .content {
     display: flex;
     justify-content: center;
+    position: relative;
   }
   
   .header-text {
-    float: left;
+    font-family: newspaper, serif;
+    font-size: 3em;
+    float: top;
+    align-content: center;
   }
 
   .subcontent {
-    font-family: 'Bebas Neue';
-    font-size: 2rem;
+    font-family: newspaper, serif;
+    font-size: 0.6em;
+    align-content: center;
   }
 
   .registration {
-    font-family: 'Bebas Neue';
+    font-family: newspaper, serif;
     height: 45%;
     padding-top: 40px;
     box-sizing: border-box;
     width: 100%;
+    font-size: 1em;
     a {
+      alignment: center;
       transition: background-color 0.25s ease;
-      font-size: 2.5rem;
+      font-size: 2em;
       background: $blue;
       color: #fff;
       padding: 1rem 2.5rem 1rem 2.5rem;
       border-radius: 12px;
+      align-content: center;
 
       &:active,
       &:hover,
@@ -67,7 +77,13 @@
       margin-left: 1em;
       width: 16em;
       height: 16em;
-      float: right;
+      float: bottom;
+    }
+    .header-text {
+      font-family: newspaper, serif;
+      font-size: 1.3em;
+      float: top;
+      align-content: center;
     }
 
     .registration {
@@ -90,7 +106,14 @@
       margin-left: .5em;
       width: 10em;
       height: 10em;
-      float: right;
+      float: bottom;
+    }
+
+    .header-text {
+      font-family: newspaper, serif;
+      font-size: 1em;
+      float: top;
+      align-content: center;
     }
 
     .subcontent {

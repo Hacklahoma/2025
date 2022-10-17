@@ -57,8 +57,9 @@ const Navbar = () => {
       <div className={`navigation ${open ? 'open' : ''}`}>
         <div className="container">
           <a className="logo" href="/">{}</a>
-          {isMobile
-            ? <Hamburger hamburger={hamburger} open={open} setOpen={setOpen} />
+          <b><a href="hacklahoma.org">Hacklahoma</a></b>
+          {isMobile?
+              <Hamburger hamburger={hamburger} open={open} setOpen={setOpen} />
             : <NavItems setOpen={setOpen} />}
           <HamburgerMenu hamburgerMenu={hamburgerMenu} setOpen={setOpen} open={open} />
         </div>

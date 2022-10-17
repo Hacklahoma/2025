@@ -6,21 +6,22 @@ import '../../styles/header.scss';
  */
 const Header = () => (
   <div className="header">
+      <div className="header-logo"></div>
     <div className="content">
       <div className="header-text">
-        <h1>Hacklahoma 2023</h1>
+
+        <h1>HACKLAHOMA 23</h1>
         <div className="subcontent">
-          <p>Feb. 11th-12th</p>
-          <p className="subtitle">University Of Oklahoma</p>
+          <p align="center">Feb. 11th-12th | University of Oklahoma</p>
         </div>
-        <div className="registration">
+        <div className="registration" align="center">
           Registration will open soon!
           {/*<a href="https://register.hacklahoma.org/">Register Now!</a>*/}
         </div>
       </div>
 
       {/* <a href="/" className="register"><p>Register</p></a> */}
-      <div className="header-logo">{ }</div>
+
     </div>
   </div>
 );

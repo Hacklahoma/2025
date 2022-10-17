@@ -2,9 +2,23 @@
 // Bebas Neue font
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+  font-family: 'new-york-times';
+  src: url("./engravers-old-english-bt.ttf");
+}
+@font-face {
+  font-family: 'newspaper';
+  src: url("./AbrilFatface-Regular.ttf");
+}
+
 body {
+  //background-image: url("../images/vintage-grunge-paper-background.jpg");
+  background-color: #F5F2E8;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
   color: $black;
-  font-family: Calibri, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: newspaper,Calibri, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,15 +48,16 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 2em;
   font-weight: normal;
-  font-family: 'Bebas Neue';
+  font-family: newspaper;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: normal;
-  font-family: 'Bebas Neue';
+  font-family: newspaper;
+  color: #333333;
 }
 
 h3 {
