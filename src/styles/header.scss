@@ -183,6 +183,7 @@
     animation-iteration-count: infinite;
 
     &--one {
+      top: 10%;
       animation-duration: 12s;
       animation-delay: 0s;
     }
@@ -194,6 +195,7 @@
 
 
     &--three {
+      top: 30%;
       animation-duration: 14.6s;
       animation-delay: 9.5s;
     }
