@@ -176,3 +176,24 @@ a {
     padding: 40px 20px;
   }
 }
+.bee {
+  position: absolute;
+  width: 60px;
+  top: -30px;
+  left: -30px;
+  z-index: 1;
+  transform-origin: center center;
+}
+#parallax-container {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -50;
+}
+
+.parallax {
+  position: fixed;
+  max-width: 100%;
+  z-index: -50;
+  will-change: transform;
+}
