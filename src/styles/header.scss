@@ -85,12 +85,11 @@
 
   @media only screen and (max-width: 840px) {
     .header-logo {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 1em;
+      justify-content: center;
+      background-position: center;
+      margin:auto;
       width: 16em;
       height: 16em;
-      float: bottom;
     }
     .header-text {
       font-family: newspaper, serif;
@@ -114,9 +113,9 @@
     margin-top: $navbar-height-mobile;
 
     .header-logo {
-      margin-top: .5em;
-      margin-bottom: .5em;
-      margin-left: .5em;
+      justify-content: center;
+      background-position: center;
+      margin:auto;
       width: 10em;
       height: 10em;
       float: bottom;
