@@ -63,12 +63,12 @@
     padding-top: 40px;
     box-sizing: border-box;
     width: 100%;
-    font-size: 0.9em;
+    font-size: 0.6em;
     a {
       alignment: center;
       transition: background-color 0.25s ease;
       font-size: 2em;
-      background: $blue;
+      background: black;
       color: #fff;
       padding: 1rem 2.5rem 1rem 2.5rem;
       border-radius: 12px;
@@ -77,7 +77,7 @@
       &:active,
       &:hover,
       &.active {
-        background: #01a7c2;
+        background: darkgrey;
       }
     }
   }
