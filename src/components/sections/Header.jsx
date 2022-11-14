@@ -35,8 +35,7 @@ const Header = () => (
           <p align="center">Feb. 11th-12th | University of Oklahoma</p>
         </div>
         <div className="registration" align="center">
-          Registration will open soon!
-          {/*<a href="https://register.hacklahoma.org/">Register Now!</a>*/}
+          <a href="https://register.hacklahoma.org/">Register Now!</a>
         </div>
       </div>
 
