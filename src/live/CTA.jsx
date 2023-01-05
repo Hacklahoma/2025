@@ -20,7 +20,7 @@ const CTA = () => (
           >
             Discord Server!
           </a>{' '}
-          The check in process will begin 8:00 AM on February 11TH. More instructions are given in the server!
+          The check in process will begin 8:00 AM on April 1st. More instructions are given in the server!
         </p>
       </div>
       <div className="step">
