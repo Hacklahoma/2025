@@ -32,7 +32,7 @@ const Header = () => (
         <h1>HACKLAHOMA 23</h1>
 
         <div className="subcontent">
-          <p align="center">Feb. 11th-12th | University of Oklahoma</p>
+          <p align="center">April 1st-2nd | University of Oklahoma</p>
         </div>
         <div className="registration" align="center">
           <a href="https://register.hacklahoma.org/">Register Now!</a>
