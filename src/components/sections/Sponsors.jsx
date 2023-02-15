@@ -11,9 +11,57 @@ const Sponsors = () => (
       <div id="sponsors" className="sponsors">
         <h2>Sponsors</h2>
         <div className="container">
-        <div className="tier tier1">
-            
-           
+          <div className="tier tier1">
+            <a
+                href="https://www.paycom.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Paycom"
+                  src='/images/sponsors_and_partners/paycom.png'
+              />
+            </a>
+            <a
+                href="https://interworks.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Interworks"
+                  src='/images/sponsors_and_partners/interworks-logo.png'
+              />
+            </a>
+            <a
+                href="https://www.kochind.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Koch"
+                  src='/images/sponsors_and_partners/koch.png'
+              />
+            </a>
+            <a
+                href="https://www.homecreations.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Home Creations"
+                  src='/images/sponsors_and_partners/homecreations-logo.png'
+              />
+            </a>
+            <a
+                href="https://www.ou.edu/coe"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Gallogly College of Engineering"
+                  src='/images/sponsors_and_partners/gcoe.png'
+              />
+            </a>
           </div>
         </div>
         <h2>Partners</h2>
