@@ -78,13 +78,13 @@ const Sponsors = () => (
         <div className="container">
           <div className="tier tier2">
             <a
-              href="https://mule.to/p2iu"
+              href="http://hackp.ac/mlh-StandOutStickers-hackathons"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                alt="stickermule"
-                src='/images/sponsors_and_partners/sticker-mule-logo.png'
+                alt="Standout Stickers"
+                src='/images/sponsors_and_partners/StandoutStickers_Logo.png'
               />
             </a>
             <a href="https://mlh.io" target="_blank" rel="noopener noreferrer">
