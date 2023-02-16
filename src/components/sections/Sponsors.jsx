@@ -62,6 +62,16 @@ const Sponsors = () => (
                   src='/images/sponsors_and_partners/gcoe.png'
               />
             </a>
+            <a
+                href="https://www.northropgrumman.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Northrop Grumman"
+                  src='/images/sponsors_and_partners/NorthropGrumman.png'
+              />
+            </a>
           </div>
         </div>
         <h2>Partners</h2>
