@@ -72,6 +72,16 @@ const Sponsors = () => (
                   src='/images/sponsors_and_partners/NorthropGrumman.png'
               />
             </a>
+            <a
+                href="https://www.bakerhughes.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <img
+                  alt="Baker Hughes"
+                  src='/images/sponsors_and_partners/baker-hughes.png'
+              />
+            </a>
           </div>
         </div>
         <h2>Partners</h2>
