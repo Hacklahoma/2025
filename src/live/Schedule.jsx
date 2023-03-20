@@ -30,52 +30,45 @@ const months = [
 export const times = [
   {
     name:     'Hacker Check-In',
-    time:     new Date('2023-04-01T14:00:00Z'),
+    time:     new Date('2023-04-01T15:00:00Z'),
     description: (
       <>
-        Due to this year being a hybrid event, 
-        check-in will all be done through our Discord server! 
-        The mod bot found within the server will send everyone a 
-        message around 8 AM with instructions on how to check-in.
+        Check-in will all be in person due to this years event
+        being in person only. Late check-in will go through dinner.
       </>
     ),
-    duration: 180,
+    duration: 150,
   },
   {
     name:     'Opening ceremony',
-    time:     new Date('2023-04-01T17:00:00Z'),
-    duration: 60,
+    time:     new Date('2023-04-01T16:30:00Z'),
+    duration: 30,
   },
   {
     name:     'Hacking begins!',
-    time:     new Date('2023-04-01T18:00:00Z'),
+    time:     new Date('2023-04-01T17:00:00Z'),
     duration: 5,
+  },
+  {
+    name:        'Grouping Activity (Activities Room)',
+    time:     new Date('2023-04-01T17:15:00Z'),
+    duration: 60,
   },
   {
     name:     'Lunch (In-person)',
     description: 'TBD will be served in the atrium! Alternatives will be provided to anyone with allergies or dietary restrictions.',
-    time:     new Date('2023-04-01T18:15:00Z'),
+    time:     new Date('2023-04-01T18:00:00Z'),
     duration: 45,
   },
   {
-    name:        'Grouping Activity (Activities Room)',
-    time:     new Date('2023-04-01T18:15:00Z'),
-    duration: 60,
-  },
-  {
     name:        'Company Workshop 1',
-    time:     new Date('2023-04-01T19:00:00Z'),
+    time:     new Date('2023-04-01T20:00:00Z'),
     description: 'TBD',
     duration: 60,
   },
   {
     name:        'TBD Workshop',
-    time:     new Date('2023-04-01T20:45:00Z'),
-    duration: 60,
-  },
-  {
-    name:        'Tech Interviews Tips',
-    time:     new Date('2023-04-01T20:45:00Z'),
+    time:     new Date('2023-04-01T21:00:00Z'),
     duration: 60,
   },
   {
@@ -85,25 +78,15 @@ export const times = [
     duration: 90,
   },
   {
-    name:        'Escape Room (Activities Room)',
-    time:     new Date('2023-04-01T22:00:00Z'),
-    duration: 90,
-  },
-  {
-    name:        'Fun activity (Activities Room)',
-    description: 'TBD',
-    time:     new Date('2023-04-01T23:30:00Z'),
-    duration: 60,
-  },
-  {
-    name:        'TBD Workshop',
-    time:     new Date('2023-04-01T23:30:00Z'),
+    name:        'MLH Snyk Workshop',
+    description: 'Snyk Workshop with Bob Ross',
+    time:     new Date('2023-04-01T23:00:00Z'),
     duration: 60,
   },
   {
     name:        'Dinner (In-person)',
-    description: 'Food TBD will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
-    time:     new Date('2023-04-01T23:45:00Z'),
+    description: 'Chicken and Rice will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    time:     new Date('2023-04-02T00:00:00Z'),
     duration: 60,
   },
   {
@@ -112,14 +95,8 @@ export const times = [
     duration: 90,
   },
   {
-    name:        'MLH Activity',
-    description: 'TBD',
-    time:     new Date('2023-04-02T01:00:00Z'),
-    duration: 60,
-  },
-  {
     name:        'More fun activities',
-    time:     new Date('2023-04-02T01:30:00Z'),
+    time:     new Date('2023-04-02T02:00:00Z'),
     duration: 60,
   },
   {
@@ -128,34 +105,34 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Video Game Kahoot (Activities Room)',
+    name:        'More Fun Activities',
     time:     new Date('2023-04-02T04:30:00Z'),
     duration: 60,
   },
   {
-    name:        'Breakfast (In-person)',
-    description: 'Food TBD will be served in the Attrium. Alternatives will be provided to anyone with allergies or dietary restrictions.',
-    time:     new Date('2023-04-02T16:00:00Z'),
+    name:        'Brunch (In-person)',
+    description: 'Bagels, Donuts, Pastries, and Coffee will be served in the Attrium. Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    time:     new Date('2023-04-02T15:00:00Z'),
     duration: 60,
   },
   {
     name:     'Hacking ends / Submissions due!',
-    time:     new Date('2023-04-02T18:00:00Z'),
+    time:     new Date('2023-04-02T17:00:00Z'),
     duration: 5,
   },
   {
     name:     'Project Expo',
-    time:     new Date('2023-04-02T19:00:00Z'),
+    time:     new Date('2023-04-02T17:30:00Z'),
     duration: 5,
   },
   {
     name:     'TBD Workshop (Classroom C)',
-    time:     new Date('2023-04-02T20:00:00Z'),
+    time:     new Date('2023-04-02T18:30:00Z'),
     duration: 5,
   },
   {
     name:     'Closing ceremony',
-    time:     new Date('2023-04-02T21:00:00Z'),
+    time:     new Date('2023-04-02T19:30:00Z'),
     duration: 30,
   },
 ];
