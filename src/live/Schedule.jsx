@@ -30,7 +30,7 @@ const months = [
 export const times = [
   {
     name:     'Hacker Check-In',
-    time:     new Date('2023-04-01T15:00:00Z'),
+    time:     new Date('2023-04-01T14:30:00Z'),
     description: (
       <>
         Check-in will all be in person due to this years event
@@ -50,68 +50,79 @@ export const times = [
     duration: 5,
   },
   {
-    name:        'Grouping Activity (Activities Room)',
+    name:        'Grouping Activity',
     time:     new Date('2023-04-01T17:15:00Z'),
     duration: 60,
   },
   {
     name:     'Lunch (In-person)',
-    description: 'TBD will be served in the atrium! Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    description: 'Chicken and Rice will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
     time:     new Date('2023-04-01T18:00:00Z'),
     duration: 45,
   },
   {
-    name:        'Company Workshop 1',
+    name:        'Baker Hughes Tech Talk',
     time:     new Date('2023-04-01T20:00:00Z'),
-    description: 'TBD',
+    description: 'Baker Highes will be doing a tech talk over TBD.',
     duration: 60,
   },
   {
-    name:        'TBD Workshop',
+    name:        'Hardware Hacks Workshop by Sooner Competitive Robotics',
     time:     new Date('2023-04-01T21:00:00Z'),
     duration: 60,
   },
   {
-    name:        'Company Workshop 2',
+    name:        'Web App Kickstart Workshop by Industry Professionals',
     time:     new Date('2023-04-01T22:00:00Z'),
-    description: 'TBD',
+    description: 'Industry professionals will work to help people get started with using node, react, and AWS.',
     duration: 90,
   },
   {
-    name:        'MLH Snyk Workshop',
-    description: 'Snyk Workshop with Bob Ross',
+    name:        'MLH Snyk Cybersecurity CTF Workshop',
     time:     new Date('2023-04-01T23:00:00Z'),
     duration: 60,
   },
   {
     name:        'Dinner (In-person)',
-    description: 'Chicken and Rice will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    description: 'Papa Johns will be served down in the atruim! Alternatives will be provided to anyone with allergies or dietary restrictions.',
     time:     new Date('2023-04-02T00:00:00Z'),
     duration: 60,
   },
   {
-    name:        'TBD Workshop',
-    time:     new Date('2023-04-02T01:00:00Z'),
+    name:        'MS Paint with Bob Ross by MLH',
+    time:     new Date('2023-04-02T00:30:00Z'),
     duration: 90,
   },
   {
-    name:        'More fun activities',
+    name:        'Machine Learning Workshop by OU SACM',
+    time:     new Date('2023-04-02T01:00:00Z'),
+    duration: 60,
+  },
+  {
+    name:        'Mario Kart Tournament with OU Esports',
+    description: 'Limited to 32 entries and will be single elimination',
     time:     new Date('2023-04-02T02:00:00Z'),
     duration: 60,
   },
   {
-    name:        'TBD Workshop',
-    time:     new Date('2023-04-02T03:00:00Z'),
+    name:        'Blitz Chess Tournament',
+    time:     new Date('2023-04-02T02:30:00Z'),
     duration: 60,
   },
   {
-    name:        'More Fun Activities',
-    time:     new Date('2023-04-02T04:30:00Z'),
+    name:        'Midnight Snack',
+    description: 'Cookies, Milk and Chai Tea will be served in the atrium.',
+    time:     new Date('2023-04-02T05:00:00Z'),
     duration: 60,
   },
   {
     name:        'Brunch (In-person)',
     description: 'Bagels, Donuts, Pastries, and Coffee will be served in the Attrium. Alternatives will be provided to anyone with allergies or dietary restrictions.',
+    time:     new Date('2023-04-02T14:30:00Z'),
+    duration: 60,
+  },
+  {
+    name:        'Resume Workshop with Industry Professionals',
     time:     new Date('2023-04-02T15:00:00Z'),
     duration: 60,
   },
@@ -122,11 +133,11 @@ export const times = [
   },
   {
     name:     'Project Expo',
-    time:     new Date('2023-04-02T17:30:00Z'),
+    time:     new Date('2023-04-02T17:15:00Z'),
     duration: 5,
   },
   {
-    name:     'TBD Workshop (Classroom C)',
+    name:     'Startup Workshop',
     time:     new Date('2023-04-02T18:30:00Z'),
     duration: 5,
   },
