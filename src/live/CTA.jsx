@@ -20,7 +20,7 @@ const CTA = () => (
           >
             Discord Server!
           </a>{' '}
-          The check in process will begin 8:00 AM on April 1st. More instructions are given in the server!
+          The check in process will begin 9:30 AM on April 1st. More instructions are given in the server!
         </p>
       </div>
       <div className="step">
@@ -28,7 +28,7 @@ const CTA = () => (
         <p className="instruct">
           Register to our{' '}
           <a
-            href="https://hacklahoma22.devpost.com"
+            href="https://hacklahoma-2023.devpost.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
