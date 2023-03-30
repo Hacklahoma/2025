@@ -37,22 +37,9 @@ const CTA = () => (
           so that you can submit your project and be judged.
         </p>
       </div>
+
       <div className="step">
-        <h2>3. </h2>
-        <p className="instruct">
-          Check out the Hacklahoma 2023 {' '}
-          <a
-            href="https://drive.google.com/file/d/18Szz_yibWhgVfbbveXos2gxCROwmh3f6/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Day-Of Guide
-          </a>{' '}
-          so that you are able to enjoy your experience at our yearly Hackathon!
-        </p>
-      </div>
-      <div className="step">
-          <h2>4. </h2>
+          <h2>3. </h2>
           <p className="instruct">
             Check out the Hacklahoma 2023 {' '}
             <a
