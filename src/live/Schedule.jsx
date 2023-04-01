@@ -33,7 +33,7 @@ export const times = [
     time:     new Date('2023-04-01T14:30:00Z'),
     description: (
       <>
-        Check-in will all be in person due to this years event
+        Check-in will all be in person in Devon Energy Hall, 110 W. Boyd St. Norman, Oklahoma, 73069, due to this years event
         being in person only. Late check-in will go through dinner.
       </>
     ),
@@ -107,6 +107,11 @@ export const times = [
   {
     name:        'Blitz Chess Tournament',
     time:     new Date('2023-04-02T02:30:00Z'),
+    duration: 60,
+  },
+  {
+    name:        'Game Developers Association Workshop',
+    time:     new Date('2023-04-02T03:00:00Z'),
     duration: 60,
   },
   {
