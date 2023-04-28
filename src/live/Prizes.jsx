@@ -22,7 +22,8 @@ const Prizes = () => (
             <h3 className="center">First Place</h3>
             <p>
               This prize will be given to the team or individual who places
-              first, overall. Each team member will receive a <b>Nintendo Switch</b>.
+              first, overall. 
+              {/* Each team member will receive a <b>Nintendo Switch</b>. */}
               <br />
               <br />
             </p>
@@ -41,7 +42,8 @@ const Prizes = () => (
             <h3 className="center">Second Place</h3>
             <p>
               This prize will be given to the team or individual who places
-              second, overall. Each team member of the winning team will receive <b>Airpod Pros</b>.
+              second, overall. 
+              {/* Each team member of the winning team will receive <b>Airpod Pros</b>. */}
             </p>
           </div>
         </div>
@@ -58,8 +60,9 @@ const Prizes = () => (
             <h3 className="center">Third Place</h3>
             <p>
               This prize will be given to the team or individual who places
-              third, overall. Each team member of the winning team will receive
-              a <b>Gaming Monitor</b>.
+              third, overall. 
+              {/* Each team member of the winning team will receive
+              a <b>Gaming Monitor</b>. */}
               <br />
               <br />
             </p>
@@ -78,8 +81,8 @@ const Prizes = () => (
             <h3 className="center">Best Beginner</h3>
             <p>
               This category rewards the best beginner hack. To be considered for
-              this prize, the hack must be created by first time hackers. Each
-              team member of the winning team will receive an <b>Amazon Alexa Echo Dot</b>.
+              this prize, the hack must be created by first time hackers. 
+              {/* Each team member of the winning team will receive an <b>Amazon Alexa Echo Dot</b>. */}
             </p>
           </div>
         </div>
@@ -96,9 +99,8 @@ const Prizes = () => (
             <h3 className="center">Best Theme</h3>
             <p>
               This category rewards the best theme for a hack. Hacks considered
-              for this category will embrace our retro theme this year. Each
-              team member of the winning team will receive a{" "}
-              <b>Keychron K8 Keyboard</b>.
+              for this category will embrace our retro theme this year. 
+              {/* Each team member of the winning team will receive a{" "} <b>Keychron K8 Keyboard</b>. */}
               <br />
               <br />
             </p>
@@ -115,9 +117,8 @@ const Prizes = () => (
           <div className="prize-item-content">
             <h3 className="center">Best Hardware Hack</h3>
             <p>
-              Using your preferred hardware or hardware emulator, build a hack
-              for your chance to win an 
-               <b> Arduino Starter Kit</b>!
+              An Award specifically for the best hack created using your preferred hardware or hardware emulator
+              {/* , build a hack for your chance to win an <b> Arduino Starter Kit</b>! */}
             </p>
           </div>
         </div>
