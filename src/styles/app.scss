@@ -1,19 +1,19 @@
 @import './constants';
 // Bebas Neue font
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.google.com/specimen/Press+Start+2P');
 
 @font-face {
   font-family: 'new-york-times';
-  src: url("./engravers-old-english-bt.ttf");
+  src: url("./PressStart2P-Regular.ttf");
 }
 @font-face {
   font-family: 'newspaper';
-  src: url("./AbrilFatface-Regular.ttf");
+  src: url("./PressStart2P-Regular.ttf");
 }
 
 body {
   //background-image: url("../images/vintage-grunge-paper-background.jpg");
-  background-color: #F5F2E8;
+  background-color: #c3f543;
   background-repeat: no-repeat;
   height: 100%;
   background-size: cover;
@@ -61,9 +61,9 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: normal;
-  font-family: 'Bebas Neue';     
+  font-family: 'newspaper';     
 }
 
 p {
@@ -85,7 +85,7 @@ strong {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'newspaper',
     monospace;
 }
 
@@ -111,7 +111,7 @@ a {
   width: 100vw;
 
   .logo {
-    background-image: url('../images/scissor-logo.png');
+    background-image: url('../images/output-onlineimagetools.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 125%;
@@ -173,7 +173,7 @@ a {
   }
 
   .box {
-    padding: 40px 20px;
+    padding: 30px 15px;
   }
 }
 .bee {
