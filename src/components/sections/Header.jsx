@@ -11,7 +11,7 @@ const Header = () => (
 
   <div className="header">
       <div className="header-logo"></div>
-      <div className="bird-container bird-container--one">
+      {/* <div className="bird-container bird-container--one">
           <div className="bird bird--one"></div>
       </div>
       <div className="bird-container bird-container--two">
@@ -24,7 +24,7 @@ const Header = () => (
 
       <div className="bird-container bird-container--four">
           <div className="bird bird--four"></div>
-      </div>
+      </div> */}
     <div className="content">
 
       <div className="header-text">
@@ -32,10 +32,10 @@ const Header = () => (
         <h1>HACKLAHOMA 23</h1>
 
         <div className="subcontent">
-          <p align="center">April 1st-2nd | University of Oklahoma</p>
+          <p align="center">Feburary 10-11 | The University of Oklahoma</p>
         </div>
         <div className="registration" align="center">
-          <a href="https://register.hacklahoma.org/">Register Now!</a>
+          <a href="https://register.hacklahoma.org/">Register soon!</a>
         </div>
       </div>
 
