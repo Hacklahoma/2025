@@ -9,7 +9,7 @@ const Sponsors = () => (
   <div>
     <Section>
       <div id="sponsors" className="sponsors">
-        <h2>Previous Sponsors</h2>
+        <h2>2023 Previous Sponsors</h2>
         <div className="container">
           <div className="tier tier1">
             <a

@@ -6,7 +6,7 @@ import '../styles/header.scss';
  */
 const Header = () => {
   // Feb 6, 2021 @ 12:00pm CST
-  const startDate = new Date('2023-04-01T17:00:00Z');
+  const startDate = new Date('2024-02-10T17:00:00Z');
   // 24hrs after start date
   const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 

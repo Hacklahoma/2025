@@ -3,7 +3,7 @@
 .sponsors {
   p { 
     a {
-      color: #ea52ef;
+      color: Black;
   
       &:hover {
         text-decoration: underline;
@@ -12,17 +12,18 @@
   }
 
   h2 {
-    color: #ea52ef;
+    color: Black;
   }
 
   .container {
     i {
-        font-size: 1.25rem;
+        font-size: 1.0 rem;
     }
     display: flex;
 
     .tier {
       align-items: center;
+      text-align: center;
       display: flex;
       flex-wrap: wrap;
       gap: 60px;

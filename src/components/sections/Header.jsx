@@ -2,8 +2,6 @@ import React from 'react';
 import '../../styles/header.scss';
 
 
-
-
 /**
  * Contains all the header needs
  */
@@ -29,13 +27,13 @@ const Header = () => (
 
       <div className="header-text">
 
-        <h1>HACKLAHOMA 23</h1>
+        <h1>HACKLAHOMA 24</h1>
 
         <div className="subcontent">
-          <p align="center">Feburary 10-11 | The University of Oklahoma</p>
+          <p align="center">Feburary 10-11, 2024 | The University of Oklahoma</p>
         </div>
         <div className="registration" align="center">
-          <a href="https://register.hacklahoma.org/">Register soon!</a>
+          <a href="https://organize.mlh.io/participants/events/9896-hacklahoma">Register Here!</a>
         </div>
       </div>
 
