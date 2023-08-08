@@ -39,7 +39,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; 
+  position: relative; 
   padding: 10px 20px; 
   background: transparent;
   width: 100%;
