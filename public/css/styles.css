@@ -770,12 +770,10 @@ html {
 }
 
 
-/* @media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 600px) {
   .header-title {
       font-size: 1.5em;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin: 0 10px;
   }
 
   .mlh-badge {
@@ -793,14 +791,6 @@ html {
       width: 120px;
   }
 
-  #menu-icon {
-      font-size: 2.8rem;
-  }
-
-  .home {
-      padding-bottom: 2rem;
-  }
-
   #home-image {
       width: 25rem;
       height: 25rem;
@@ -809,7 +799,6 @@ html {
   .register-button {
       width: 250px;
       height: 60px;
-      line-height: 50px;
   }
 
   .landscape-image {
@@ -829,10 +818,77 @@ html {
       width: 10rem;
       height: 10rem;
   }
+
+  .cloud {
+      width: 100px;
+  }
+
+  #about-content p {
+      font-size: 1.5rem;
+  }
+
+  .guide-item {
+      max-width: 100%; 
+      margin: 0.5rem; 
+  }
+
+  .faq-grid {
+      grid-template-columns: 1fr; 
+      gap: 2rem;
+  }
+
+  .faq-button {
+      width: 100%; 
+      padding: 1.5rem; 
+  }
+
+  .modal-content {
+      width: 90%; 
+  }
+
+  #sponsors, #partners {
+      padding: 2rem 1rem;
+  }
+
+  #sponsors h2, #partners h2 {
+      font-size: 1.5rem;
+  }
+
+  .sponsor-logos a, .partner-logos a {
+      flex: 1 1 50%;
+  }
+
+  .sponsor-logos img, .partner-logos img {
+      max-width: 120px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      padding: 0 10px;
+  }
+
+  .footer-logo {
+      width: 180px;
+  }
+
+  .footer-column h3, .footer-column p, .footer-column a {
+      font-size: 1rem;
+  }
+
+  .social-icon, .top-icon {
+      width: 90px;
+  }
+
+  .top-icon {
+      margin-top: 5rem;
+  }
+
+  .heart-icon {
+      width: 140px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-
   .header-title {
       font-size: 1.8em;
   }
@@ -859,7 +915,6 @@ html {
   .register-button {
       width: 350px;
       height: 80px;
-      line-height: 70px;
   }
 
   .landscape-image {
@@ -878,135 +933,46 @@ html {
       width: 12rem;
       height: 12rem;
   }
-}
 
-@media screen and (max-width: 768px) { 
-  
-  .cloud {
-    width: 100px; 
-  }
-
-  #about-content p {
-    font-size: 1.5rem;
-  }
-
-  .guide h2 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .guide-item {
-    max-width: 100%; 
-    margin: 0.5rem; 
-  }
-
-  .faq-grid {
-    grid-template-columns: 1fr; 
-    gap: 2rem; 
-  }
-
-  .faq-button {
-    width: 100%; 
-    padding: 1.5rem; 
-  }
-  
-  .modal-content {
-    width: 90%; 
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #about-content p {
-    font-size: 1.2rem; 
-  }
-
-  .guide-item h3 {
-    font-size: 2rem; 
-  }
-}
-
-#sponsors, #partners {
-  padding: 2rem 1rem;
-}
-
-#sponsors h2, #partners h2 {
-  font-size: 1.5rem;
-}
-
-.sponsor-logos a, .partner-logos a {
-  flex: 1 1 50%; 
-}
-
-.sponsor-logos img, .partner-logos img {
-  max-width: 120px;
-}
-
-.footer-container {
-  flex-direction: column;
-  padding: 0 10px;
-}
-
-.footer-logo {
-  width: 180px; 
-}
-
-.footer-column h3, .footer-column p, .footer-column a {
-  font-size: 1rem;
-}
-
-.social-icon, .top-icon {
-  width: 90px; 
-}
-
-.top-icon {
-  margin-top: 5rem;
-}
-
-.heart-icon {
-  width: 140px;
-}
-
-@media (min-width: 768px) {
-
+  /* Additional styles */
   #sponsors, #partners {
-    padding: 3rem 2rem;
+      padding: 3rem 2rem;
   }
 
   #sponsors h2, #partners h2 {
-    font-size: 2rem;
+      font-size: 2rem;
   }
 
   .sponsor-logos a, .partner-logos a {
-    flex: 1 1 calc(25% - 2rem); 
+      flex: 1 1 calc(25% - 2rem);
   }
 
   .sponsor-logos img, .partner-logos img {
-    max-width: 150px;
+      max-width: 150px;
   }
 
   .footer-container {
-    flex-direction: row;
-    padding: 0 20px;
+      flex-direction: row;
+      padding: 0 20px;
   }
 
   .footer-logo {
-    width: 250px; 
+      width: 250px;
   }
 
   .footer-column h3, .footer-column p, .footer-column a {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
 
   .social-icon, .top-icon {
-    width: 130px; 
+      width: 130px;
   }
 
   .top-icon {
-    margin-top: 10rem;
+      margin-top: 10rem;
   }
 
   .heart-icon {
-    width: 180px;
+      width: 180px;
   }
-
-} */
+}
