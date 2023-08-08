@@ -11,28 +11,13 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
     font-family: 'PixelFont', sans-serif;
 }
 
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  visibility: hidden;
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-}
-
-.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
 }
 
 .header {
