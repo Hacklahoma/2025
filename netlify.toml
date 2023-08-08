@@ -1,0 +1,10 @@
+[[headers]]
+# Define the paths for these headers
+for = "/*"
+
+[headers.values]
+Content-Security-Policy = "default-src 'self'; ..."
+X-Frame-Options = "SAMEORIGIN"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "geolocation=(self), microphone=()"
