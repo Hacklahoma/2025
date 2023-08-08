@@ -10,5 +10,21 @@
   "author": "MohamedHAbdelnaby <mohamedhanykamal214@gmail.com>",
   "license": "ISC",
   "keywords": [],
-  "repository": "https://github.com/Hacklahoma/2024.git"
+  "repository": "https://github.com/Hacklahoma/2024.git",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
