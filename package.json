@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "MohamedHAbdelnaby <mohamedhanykamal214@gmail.com>",
   "license": "ISC",
-  "keywords": []
+  "keywords": [],
+  "repository": "https://github.com/Hacklahoma/2024.git"
 }
