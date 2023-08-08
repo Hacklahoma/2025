@@ -1059,45 +1059,46 @@ html {
   .guide-item h3 {
     font-size: 2rem; 
   }
+  #sponsors, #partners {
+    padding: 2rem 1rem;
+  }
+  
+  #sponsors h2, #partners h2 {
+    font-size: 1.5rem;
+  }
+  
+  .sponsor-logos a, .partner-logos a {
+    flex: 1 1 50%; 
+  }
+  
+  .sponsor-logos img, .partner-logos img {
+    max-width: 120px;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .footer-logo {
+    width: 180px; 
+  }
+  
+  .footer-column h3, .footer-column p, .footer-column a {
+    font-size: 1rem;
+  }
+  
+  .social-icon, .top-icon {
+    width: 90px; 
+  }
+  
+  .top-icon {
+    margin-top: 5rem;
+  }
+  
+  .heart-icon {
+    width: 140px;
+  }
+  
 }
 
-#sponsors, #partners {
-  padding: 2rem 1rem;
-}
-
-#sponsors h2, #partners h2 {
-  font-size: 1.5rem;
-}
-
-.sponsor-logos a, .partner-logos a {
-  flex: 1 1 50%; 
-}
-
-.sponsor-logos img, .partner-logos img {
-  max-width: 120px;
-}
-
-.footer-container {
-  flex-direction: column;
-  padding: 0 10px;
-}
-
-.footer-logo {
-  width: 180px; 
-}
-
-.footer-column h3, .footer-column p, .footer-column a {
-  font-size: 1rem;
-}
-
-.social-icon, .top-icon {
-  width: 90px; 
-}
-
-.top-icon {
-  margin-top: 5rem;
-}
-
-.heart-icon {
-  width: 140px;
-}
