@@ -1,11 +1,3 @@
-function toggleMenu() {
-    var menuItems = document.querySelector('.menu-items');
-    if (menuItems.style.display === 'none' || menuItems.style.display === '') {
-        menuItems.style.display = 'block';
-    } else {
-        menuItems.style.display = 'none';
-    }
-}
 
 const countDownDate = new Date("Feb 10, 2024 00:00:00").getTime();
 
