@@ -614,7 +614,7 @@ html {
 }
 
 .close {
-  color: var(--main-color);
+  color: rgba(199, 44, 44, 0.888);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -623,7 +623,7 @@ html {
 
 .close:hover,
 .close:focus {
-  color: var(--second-bg-color);
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
