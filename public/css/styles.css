@@ -628,6 +628,91 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  .cloud-big {
+      margin-top: -8rem;
+      width: 90vw; 
+      margin-bottom: -15rem;
+      opacity: 1;
+      margin-left: 0;
+  }
+
+  .about {
+      background-size: 30% auto, 30% auto;
+      padding-bottom: 2rem; 
+  }
+
+  #about-content p {
+      font-size: 1.5rem;
+  }
+
+  .guide h2 {
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+  }
+
+  .guide-container {
+      padding: 1rem;
+  }
+
+  .guide-item {
+      min-width: 80%; 
+      max-width: 80%;
+  }
+
+  .guide-item h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .guide-item p {
+      font-size: 1.2rem;
+  }
+
+  .guide-item img {
+      width: 25rem;
+  }
+
+  .faq-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem 1rem;
+  }
+
+  .faq-button {
+      font-size: 0.8rem;
+  }
+
+  .modal-content {
+      width: 90%;
+      font-size: 1.2rem;
+  }
+
+  .close {
+      font-size: 24px;
+      margin: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+
+  .about {
+      background-size: 40% auto, 40% auto;
+  }
+
+  .guide h2 {
+      margin-bottom: 6rem;
+      margin-top: 6rem;
+  }
+
+  .guide-item {
+      min-width: 45%; 
+      max-width: 45%;
+  }
+
+  .faq-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
 #sponsors {
   background-color: black;
   color: white;
