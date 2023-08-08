@@ -6,3 +6,10 @@ function toggleMenu() {
         menuItems.style.display = 'none';
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuButton = document.querySelector('.menu-button');
+    if (menuButton) {
+        menuButton.addEventListener('click', toggleMenu);
+    }
+});
