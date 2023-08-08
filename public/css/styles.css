@@ -869,157 +869,147 @@ html {
     box-shadow: none;
   }
 
+  .header-title, #sponsors h2, #partners h2 {
+    font-size: 1.5em;
+  }
+
   .header-title {
-      font-size: 1.5em;
-      margin: 5px 0;
+    margin: 5px 0;
+  }
+
+  .mlh-badge, .menu-button {
+    right: 10px;
   }
 
   .mlh-badge {
-      top: 10px;
-      right: 10px;
-      width: 50px;
+    top: 10px;
+    width: 50px;
   }
 
   .navbar {
-      width: 100%;
-      padding-top: 10px;
+    width: 100%;
+    padding-top: 10px;
   }
 
   .menu-items {
-      right: 10px;
-      top: 60px;
+    right: 10px;
+    top: 60px;
   }
 
   .menu-button {
-      width: 180px;
-      height: 40px;
-      font-size: 16px;
-      line-height: 40px;
-      right: 10px;
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
   }
 
   .logo img {
-      top: 5px;
-      width: 140px;
+    top: 5px;
+    width: 140px;
   }
 
   #menu-icon {
-      display: block;
-      font-size: 2.4rem;
+    display: block;
+    font-size: 2.4rem;
   }
   
   .section {
-      padding: 3rem 5%;
+    padding: 3rem 5%;
   }
-  
+
   #home-content, .home {
-      gap: 1rem;
+    gap: 1rem;
   }
 
   #home-image {
-      width: 25rem;
-      height: 25rem;
-      margin-top: 5rem;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 5rem;
   }
-  
+
   .register-button {
-      width: 200px;
-      height: 60px;
-      line-height: 40px;
-      font-size: 16px;
-      margin-bottom: 2rem;
-      margin-top: -5rem;
+    width: 200px;
+    height: 60px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: -5rem 0 2rem 0;
   }
   
   .landscape-image {
-      width: 80%;
-      margin-top: -10rem;
+    width: 80%;
+    margin-top: -10rem;
   }
   
   .event-details {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
-  
+
   .countdown {
-      flex-direction: column;
-      gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .countdown-text {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
-  
+
   .countdown-clock {
-      width: 10rem;
-      height: 10rem;
+    width: 10rem;
+    height: 10rem;
   }
 
-  #sponsors, #footer {
-      padding: 2rem 1rem;
-  }
-
-  #sponsors h2, #partners h2 {
-      font-size: 1.5rem;
-  }
-
-  .sponsor-logos a, .partner-logos a {
-      flex: 1 1 calc(50% - 1rem); 
-  }
-
-  .sponsor-logos img, .partner-logos img {
-      max-width: 100px;
-  }
-
-  #footer {
+  #sponsors, #footer, #partners {
     padding: 2rem 1rem;
   }
 
+  .sponsor-logos a, .partner-logos a {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .sponsor-logos img, .partner-logos img {
+    max-width: 100px;
+  }
+
   .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
   }
 
   .footer-column {
-      width: 100%;
-      align-items: center;
+    width: 100%;
+    align-items: center;
   }
 
   .footer-logo {
-      width: 180px; 
-      margin-bottom: 1rem;
+    width: 180px;
+    margin-bottom: 1rem;
   }
 
   .social-icon, .top-icon {
-      width: 50px;
+    width: 50px;
   }
 
   .top-icon {
-      margin-top: 3rem;
-      margin-bottom: 1rem;
+    margin: 3rem 0 1rem 0;
   }
 
   .heart-icon {
-      width: 100px;
-      margin: 0 -40px;
+    width: 100px;
+    margin: 0 -40px;
   }
 
   .grass {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 
   .grass img {
-      margin-top: -30rem;
+    margin-top: -30rem;
   }
-}
-
-
-
-@media screen and (max-width: 768px) { 
   
   .cloud {
-    width: 100px; 
+    width: 100px;
   }
 
   #about-content p {
@@ -1027,78 +1017,59 @@ html {
   }
 
   .guide h2 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
   
   .guide-item {
-    max-width: 100%; 
-    margin: 0.5rem; 
+    max-width: 100%;
+    margin: 0.5rem;
   }
 
   .faq-grid {
-    grid-template-columns: 1fr; 
-    gap: 2rem; 
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .faq-button {
-    width: 100%; 
-    padding: 1.5rem; 
+    width: 100%;
+    padding: 1.5rem;
   }
   
   .modal-content {
-    width: 90%; 
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   #about-content p {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
   .guide-item h3 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
-  #sponsors, #partners {
-    padding: 2rem 1rem;
-  }
-  
-  #sponsors h2, #partners h2 {
-    font-size: 1.5rem;
-  }
-  
-  .sponsor-logos a, .partner-logos a {
-    flex: 1 1 50%; 
-  }
-  
-  .sponsor-logos img, .partner-logos img {
-    max-width: 120px;
-  }
-  
-  .footer-container {
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  
-  .footer-logo {
-    width: 180px; 
-  }
-  
+
   .footer-column h3, .footer-column p, .footer-column a {
     font-size: 1rem;
   }
-  
+
   .social-icon, .top-icon {
-    width: 90px; 
+    width: 90px;
   }
-  
+
   .top-icon {
     margin-top: 5rem;
   }
-  
+
   .heart-icon {
     width: 140px;
   }
-  
-}
 
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .sponsor-logos img, .partner-logos img {
+    max-width: 120px;
+  }
+}
