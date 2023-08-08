@@ -4,7 +4,8 @@
   "description": "Hacklahoma 2024",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no build specified\" && exit 1"
   },
   "author": "MohamedHAbdelnaby <mohamedhanykamal214@gmail.com>",
   "license": "ISC",
