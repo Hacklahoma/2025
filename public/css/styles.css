@@ -247,6 +247,8 @@ body {
   gap: 0.5rem; 
   color: #ffffff;
   text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .countdown-text {
@@ -254,6 +256,7 @@ body {
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
+  text-align: center;
 }
 
 .countdown-text span {
@@ -264,12 +267,15 @@ body {
 }
 
 .countdown-clock {
-  width: 50%;
   height: auto;
   background: url('../images/clock.svg') no-repeat center center; 
   background-size: cover; 
   border-radius: 50%;
   margin-top: 1rem;
+  text-align: center;
+  width: 80%; 
+  max-width: 300px;
+  min-width: 100px;
 }
 
 .clouds {
@@ -1095,6 +1101,20 @@ body {
 
 @media (min-width: 768px) {
 
+  .header {
+    height: 50px;
+  }
+
+  .header h1, .header p {
+    font-size: 14px;
+  }
+
+  .mlh-badge {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+  }
+
   #home-image {
     width: 40rem;
     height: 40rem;
@@ -1119,8 +1139,12 @@ body {
   }
 
   .countdown {
-    margin-top: -5rem;
-    flex-direction: row; 
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .countdown-clock {
+    font-size: 18px;
   }
 
   .countdown-text {
@@ -1130,12 +1154,6 @@ body {
   .countdown-text span {
     padding: 5px 10px;
     margin: 0 5px;
-  }
-
-  .countdown-clock {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 0;
   }
 
   #sponsors, #partners {
