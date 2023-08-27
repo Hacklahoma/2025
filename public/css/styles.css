@@ -1101,19 +1101,7 @@ body {
 
 @media (min-width: 768px) {
 
-  .header {
-    height: 50px;
-  }
-
-  .header h1, .header p {
-    font-size: 14px;
-  }
-
-  .mlh-badge {
-    top: 5px;
-    right: 5px;
-    width: 40px;
-  }
+  
 
   #home-image {
     width: 40rem;
@@ -1139,12 +1127,8 @@ body {
   }
 
   .countdown {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .countdown-clock {
-    font-size: 18px;
+    margin-top: -5rem;
+    flex-direction: row; 
   }
 
   .countdown-text {
@@ -1154,6 +1138,12 @@ body {
   .countdown-text span {
     padding: 5px 10px;
     margin: 0 5px;
+  }
+
+  .countdown-clock {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 0;
   }
 
   #sponsors, #partners {
