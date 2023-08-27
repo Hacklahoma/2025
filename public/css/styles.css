@@ -272,51 +272,6 @@ body {
   margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
-  #home-image {
-    width: 40rem;
-    height: 40rem;
-    margin-top: 10rem;
-  }
-
-  .register-button {
-    padding: 12px 20px;
-    width: 770px;
-    height: 190px;
-    line-height: 160px;
-    margin-bottom: 5rem;
-    margin-top: -10rem;
-  }
-
-  .landscape-image {
-    margin-top: -20rem;
-  }
-
-  .event-details {
-    font-size: 1.5rem;
-  }
-
-  .countdown {
-    margin-top: -5rem;
-    flex-direction: row; 
-  }
-
-  .countdown-text {
-    font-size: 2rem;
-  }
-
-  .countdown-text span {
-    padding: 5px 10px;
-    margin: 0 5px;
-  }
-
-  .countdown-clock {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 0;
-  }
-}
-
 
 
 
@@ -1087,6 +1042,49 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  #home-image {
+    width: 40rem;
+    height: 40rem;
+    margin-top: 10rem;
+  }
+
+  .register-button {
+    padding: 12px 20px;
+    width: 770px;
+    height: 190px;
+    line-height: 160px;
+    margin-bottom: 5rem;
+    margin-top: -10rem;
+  }
+
+  .landscape-image {
+    margin-top: -20rem;
+  }
+
+  .event-details {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    margin-top: -5rem;
+    flex-direction: row; 
+  }
+
+  .countdown-text {
+    font-size: 2rem;
+  }
+
+  .countdown-text span {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  .countdown-clock {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 0;
+  }
 
   #sponsors, #partners {
     padding: 3rem 2rem;

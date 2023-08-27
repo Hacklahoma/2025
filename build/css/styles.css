@@ -958,7 +958,7 @@ body {
   }
 
   .mlh-badge {
-      width: 60px;
+      width: 20px;
   }
 
   .menu-button {
@@ -980,24 +980,25 @@ body {
       width: 350px;
       height: 80px;
       line-height: 70px;
-      font-size: 1.2rem;
-  }
-
-  .landscape-image {
-      margin-top: -15rem;
+      font-size: .8rem;
   }
 
   .event-details {
-      font-size: 1.4rem;
+    font-size: 4vw; 
+    word-wrap: break-word;  
   }
 
   .countdown-text {
-      font-size: 1.8rem;
+      font-size: 4.5vw;  
+      word-wrap: break-word;
   }
 
   .countdown-clock {
-      width: 12rem;
-      height: 12rem;
+      width: 80vw; 
+      height: 80vw; 
+      max-width: 12rem;
+      max-height: 12rem;
+      box-sizing: border-box; 
   }
   
   .cloud {
@@ -1041,47 +1042,48 @@ body {
   .guide-item h3 {
     font-size: 2rem; 
   }
-}
 
-#sponsors, #partners {
-  padding: 2rem 1rem;
-}
+  #sponsors, #partners {
+    padding: 2rem 1rem;
+  }
 
-#sponsors h2, #partners h2 {
-  font-size: 1.5rem;
-}
+  #sponsors h2, #partners h2 {
+    font-size: 1.5rem;
+  }
 
-.sponsor-logos a, .partner-logos a {
-  flex: 1 1 50%; 
-}
+  .sponsor-logos a, .partner-logos a {
+    flex: 1 1 50%; 
+  }
 
-.sponsor-logos img, .partner-logos img {
-  max-width: 120px;
-}
+  .sponsor-logos img, .partner-logos img {
+    max-width: 120px;
+  }
 
-.footer-container {
-  flex-direction: column;
-  padding: 0 10px;
-}
+  .footer-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
 
-.footer-logo {
-  width: 180px; 
-}
+  .footer-logo {
+    width: 180px; 
+  }
 
-.footer-column h3, .footer-column p, .footer-column a {
-  font-size: 1rem;
-}
+  .footer-column h3, .footer-column p, .footer-column a {
+    font-size: 1rem;
+  }
 
-.social-icon, .top-icon {
-  width: 90px; 
-}
+  .social-icon, .top-icon {
+    width: 90px; 
+  }
 
-.top-icon {
-  margin-top: 5rem;
-}
+  .top-icon {
+    margin-top: 5rem;
+  }
 
-.heart-icon {
-  width: 140px;
+  .heart-icon {
+    width: 140px;
+  }
+
 }
 
 @media (min-width: 768px) {
