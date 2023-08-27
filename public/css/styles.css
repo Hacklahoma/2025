@@ -1037,18 +1037,18 @@ body {
   }
 
   .countdown {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem; 
   }
 
   .countdown-text {
-    font-size: 1.1rem;
+    font-size: calc(4px + 1vmin);  
+    word-wrap: break-word;  
   }
 
   .countdown-clock {
-    width: 7rem;
-    height: 7rem;
+    width: calc(40px + 2vmin);  
+    height: calc(40px + 2vmin); 
   }
-
   #about-content p {
     font-size: 1.2rem; 
   }
