@@ -247,6 +247,11 @@ body {
   gap: 0.5rem; 
   color: #ffffff;
   text-align: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;  
 }
 
 .countdown-text {
@@ -254,6 +259,7 @@ body {
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
+  text-align: center;
 }
 
 .countdown-text span {
@@ -264,12 +270,15 @@ body {
 }
 
 .countdown-clock {
-  width: 50%;
   height: auto;
   background: url('../images/clock.svg') no-repeat center center; 
   background-size: cover; 
   border-radius: 50%;
   margin-top: 1rem;
+  text-align: center;
+  width: 80%; 
+  max-width: 300px;
+  min-width: 100px;
 }
 
 .clouds {
@@ -819,12 +828,13 @@ body {
   }
 
   .countdown-text {
-    font-size: 1.2rem;
+    font-size: calc(6px + 1vmin); 
+    word-wrap: break-word;  
   }
 
   .countdown-clock {
-    width: 8rem;
-    height: 8rem;
+    width: calc(50px + 3vmin); 
+    height: calc(50px + 3vmin); 
   }
 
   .menu-button {
@@ -962,16 +972,13 @@ body {
   }
 
   .countdown-text {
-      font-size: 4.5vw;  
-      word-wrap: break-word;
+    font-size: calc(8px + 1vmin); 
+    word-wrap: break-word;  
   }
 
   .countdown-clock {
-      width: 80vw; 
-      height: 80vw; 
-      max-width: 12rem;
-      max-height: 12rem;
-      box-sizing: border-box; 
+    width: calc(70px + 3vmin); 
+    height: calc(70px + 3vmin);  
   }
   
   .cloud {
@@ -1030,18 +1037,18 @@ body {
   }
 
   .countdown {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem; 
   }
 
   .countdown-text {
-    font-size: 1.1rem;
+    font-size: calc(4px + 1vmin);  
+    word-wrap: break-word;  
   }
 
   .countdown-clock {
-    width: 7rem;
-    height: 7rem;
+    width: calc(40px + 2vmin);  
+    height: calc(40px + 2vmin); 
   }
-
   #about-content p {
     font-size: 1.2rem; 
   }
@@ -1132,10 +1139,13 @@ body {
     margin: 0 5px;
   }
 
+  .countdown-text {
+    font-size: calc(10px + 1vmin); 
+  }
+
   .countdown-clock {
-    width: 15rem;
-    height: 15rem;
-    margin-top: 0;
+    width: calc(100px + 3vmin);
+    height: calc(100px + 3vmin);  
   }
 
   #sponsors, #partners {

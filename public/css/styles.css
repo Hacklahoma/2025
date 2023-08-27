@@ -804,7 +804,13 @@ body {
 @media only screen and (max-width: 600px) {
 
   .header {
+    z-index: 1000;
     padding: 5px 10px;
+  }
+  
+  .home {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
   }
 
   .header-title {
@@ -1014,12 +1020,17 @@ body {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
+
 
   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 10px;
   }
 
+  
   .header-title {
     font-size: 1.1em;
     margin-left: 5px;
@@ -1028,27 +1039,41 @@ body {
 
   .mlh-badge {
     top: 5px;
-    right: 0;
+    right: 15px;
   }
 
   .logo img {
-    width: 80px;
+    width: 150px;
+    height: auto;
     top: 2px;
+    left: -10px;
   }
 
   .countdown {
     margin-top: 0.2rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .countdown-text {
-    font-size: calc(4px + 1vmin);  
-    word-wrap: break-word;  
+    font-size: 2rem;  
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
   }
-
+  
   .countdown-clock {
     width: calc(40px + 2vmin);  
-    height: calc(40px + 2vmin); 
+    height: calc(40px + 2vmin);
+    overflow: hidden;
   }
+
+  .countdown-text {
+    font-size: 2.5vw;  
+  }
+
   #about-content p {
     font-size: 1.2rem; 
   }
