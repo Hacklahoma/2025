@@ -893,6 +893,7 @@ body {
 
   .mlh-badge {
     top: 15px;
+    right: 2px;
   }
 
   .logo img {
@@ -905,7 +906,7 @@ body {
   }
 
   .countdown-text {
-    font-size: 1.6rem;
+    font-size: 4px;
   }
 
   .countdown-clock {
@@ -917,6 +918,7 @@ body {
       width: 220px;
       height: 70px;
       font-size: 16px;
+      right: 30px;
   }
 
 
