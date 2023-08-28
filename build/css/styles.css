@@ -657,7 +657,7 @@ body {
 }
 
 #sponsors {
-  background-color: black;
+  background: linear-gradient(to bottom right, #333333, #1a1a1a, #000000);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -949,13 +949,15 @@ body {
   }
 
   .mlh-badge {
-      width: 20px;
+      width: 40px;
+      right:11px;
   }
 
   .menu-button {
       width: 220px;
       height: 70px;
       font-size: 16px;
+      right: 8px;
   }
 
   .logo img {
@@ -980,7 +982,7 @@ body {
   }
 
   .countdown-text {
-    font-size: calc(8px + 1vmin); 
+    font-size: 9px; 
     word-wrap: break-word;  
   }
 
@@ -993,8 +995,12 @@ body {
     width: 100px; 
   }
 
+  .about {
+    margin-top: -25rem;
+  }
+
   #about-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .guide h2 {
@@ -1019,6 +1025,48 @@ body {
   
   .modal-content {
     width: 90%; 
+  }
+
+  #sponsors, #partners {
+    padding: 2rem 1rem;
+  }
+
+  #sponsors h2, #partners h2 {
+    font-size: 1.5rem;
+  }
+
+  .sponsor-logos a, .partner-logos a {
+    flex: 1 1 50%; 
+  }
+
+  .sponsor-logos img, .partner-logos img {
+    max-width: 120px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .footer-logo {
+    width: 180px; 
+    right:10px;
+  }
+
+  .footer-column h3, .footer-column p, .footer-column a {
+    font-size: 1rem;
+  }
+
+  .social-icon, .top-icon {
+    width: 90px; 
+  }
+
+  .top-icon {
+    margin-top: 5rem;
+  }
+
+  .heart-icon {
+    width: 180px;
   }
 }
 
