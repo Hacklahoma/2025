@@ -672,7 +672,7 @@ body {
   right: 0;
   bottom: 0; 
   height: 10px;
-  background: linear-gradient(180deg, rgb(2, 2, 2) 50%, transparent 50%);
+  background: black;
 }
 
 .stars-container {
