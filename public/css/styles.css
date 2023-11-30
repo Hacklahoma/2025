@@ -657,7 +657,7 @@ body {
 }
 
 #sponsors {
-  background: linear-gradient(to bottom right, #333333, #1a1a1a, #000000);
+  background: black;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -672,7 +672,7 @@ body {
   right: 0;
   bottom: 0; 
   height: 10px;
-  background: black;
+  background: linear-gradient(180deg, rgb(58, 50, 50) 50%, transparent 50%);
 }
 
 .stars-container {
