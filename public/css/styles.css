@@ -969,6 +969,12 @@ body {
     padding: 2rem; 
   }
 
+  #home-content h1 {
+    font-size: 2.2rem; 
+    margin-bottom: 1rem; 
+    letter-spacing: 0.09rem;
+  }
+
 
 }
 
@@ -1126,6 +1132,12 @@ body {
   .live {
     padding: 1.5rem; 
   }
+
+  #home-content h1 {
+    font-size: 2rem; 
+    margin-bottom: 0.8rem; 
+    letter-spacing: 0.08rem; 
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1259,6 +1271,12 @@ body {
 
   .live {
     padding: 1rem;
+  }
+
+  #home-content h1 {
+    font-size: 1.8rem; 
+    margin-bottom: 0.75rem; 
+    letter-spacing: 0.05rem;
   }
 
 }
@@ -1415,7 +1433,7 @@ body {
 
 #home-content h1 {
   font-size: 2.5rem; 
-  color: #8211AD; 
+  color: #ffffff; 
   margin-bottom: 1rem; 
   text-transform: uppercase; 
   letter-spacing: 0.1rem;
