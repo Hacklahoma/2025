@@ -948,6 +948,27 @@ body {
       font-size: 1.4rem;
   }
 
+  #eventSchedule {
+    max-width: 90%; 
+  }
+
+  #eventSchedule li {
+    font-size: 1.5rem; 
+    padding: 1rem 2rem; 
+  }
+
+  #eventSchedule li[data-time]:before {
+    font-size: 1rem; 
+  }
+
+  #home-content h1 {
+    font-size: 2.5rem; 
+  }
+
+  .live {
+    padding: 2rem; 
+  }
+
 
 }
 
@@ -1088,6 +1109,23 @@ body {
   .heart-icon {
     width: 180px;
   }
+
+  #eventSchedule li {
+    font-size: 1.4rem; 
+    padding: 0.8rem 1.5rem; 
+  }
+
+  #eventSchedule li[data-time]:before {
+    font-size: 0.85rem; 
+  }
+
+  #home-content h1 {
+    font-size: 2.2rem; 
+  }
+
+  .live {
+    padding: 1.5rem; 
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1200,6 +1238,29 @@ body {
     width: 180px;
   }
 
+  #eventSchedule {
+    max-width: 100%;
+    box-shadow: none; 
+  }
+
+  #eventSchedule li {
+    font-size: 1.2rem; 
+    padding: 0.75rem 1rem; 
+    margin-bottom: 5px; 
+  }
+
+  #eventSchedule li[data-time]:before {
+    font-size: 0.8rem; 
+  }
+
+  #home-content h1 {
+    font-size: 2rem; 
+  }
+
+  .live {
+    padding: 1rem;
+  }
+
 }
 
 
@@ -1297,4 +1358,65 @@ body {
     width: 180px;
   }
 
+}
+
+
+#eventSchedule {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#eventSchedule li {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  padding: 1rem 2rem;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #eaeaea;
+  color: #333; 
+}
+
+#eventSchedule li:hover {
+  color: #007bff !important;
+}
+
+#eventSchedule li.line-through {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+#eventSchedule li:last-child {
+  border-bottom: none;
+}
+
+#eventSchedule li[data-time] {
+  background: #e3f2fd;
+  color: #0D47A1;
+}
+
+#eventSchedule li[data-time]:before {
+  content: attr(data-time);
+  font-weight: bold;
+  display: block;
+  color: #0D47A1;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.live {
+  background-color: #BE7195;
+  padding: 2rem;
+}
+
+#home-content h1 {
+  font-size: 2.5rem; 
+  color: #8211AD; 
+  margin-bottom: 1rem; 
+  text-transform: uppercase; 
+  letter-spacing: 0.1rem;
 }
