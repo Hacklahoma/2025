@@ -975,6 +975,20 @@ body {
     letter-spacing: 0.09rem;
   }
 
+  .prize-list li {
+    padding: 30px; 
+    font-size: 1.3rem; 
+  }
+
+  .prize-image {
+    width: 150px; 
+    margin-right: 18px; 
+  }
+
+  #prizes h2 {
+    font-size: 2.2rem; 
+  }
+
 
 }
 
@@ -1138,6 +1152,40 @@ body {
     margin-bottom: 0.8rem; 
     letter-spacing: 0.08rem; 
   }
+
+  #prizes {
+    padding: 2rem; 
+    text-align: center;
+  }
+
+  #prizes h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem; 
+  }
+
+  .prize-list {
+    max-width: 95%; 
+  }
+
+  .prize-list li {
+    padding: 20px;
+    font-size: 1.2rem; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: left; 
+    margin-bottom: 1.5rem; 
+  }
+
+  .prize-image {
+    width: 150px;
+    margin-bottom: 15px; 
+    margin-right: 0; 
+  }
+
+  .prize-list li strong {
+    font-size: 1.4rem; 
+    margin-bottom: 0.5rem; 
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1277,6 +1325,20 @@ body {
     font-size: 1.8rem; 
     margin-bottom: 0.75rem; 
     letter-spacing: 0.05rem;
+  }
+
+  .prize-list li {
+    padding: 20px; 
+    font-size: 1.2rem; 
+  }
+
+  .prize-image {
+    width: 120px; 
+    margin-right: 15px; 
+  }
+
+  #prizes h2 {
+    font-size: 2rem; 
   }
 
 }
@@ -1437,4 +1499,59 @@ body {
   margin-bottom: 1rem; 
   text-transform: uppercase; 
   letter-spacing: 0.1rem;
+}
+
+#prizes {
+  background:  linear-gradient(180deg, #9C5079 0%, #682D4B 100%);
+  padding: 3rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#prizes h2 {
+  color: #E3E4E6;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prize-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.prize-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.4rem;
+}
+
+.prize-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.prize-image {
+  width: 190px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prize-list li strong {
+  font-size: 1.4rem;
+  color: orange; 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
