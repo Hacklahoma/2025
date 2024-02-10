@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const eventSchedule = document.getElementById('eventSchedule');
     const countdownElement = document.getElementById('countdown');
-    const endTime = new Date('2024-02-11T14:30:00'); 
+    const endTime = new Date('2024-02-11T12:00:00'); 
 
     function updateSchedule() {
         const now = new Date();
