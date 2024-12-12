@@ -234,11 +234,11 @@
 /* MOBILE - Modal close button */
 .modal-close-mobile {
     position: absolute;
-    top: 0.3vh; /* Adjust top positioning for mobile */
-    right: 0.40vh; /* Adjust right positioning for mobile */
+    top: 0.1vh; /* Adjust top positioning for mobile */
+    right: 0.1vh; /* Adjust right positioning for mobile */
     background: none;
     border: none;
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
     color: black;
