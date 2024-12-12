@@ -37,8 +37,8 @@
 .Sponsor1, .Sponsor2 {
     position: relative;
     object-fit: contain;
-    width: 200px; /* Set consistent width */
-    height: 100px; /* Set consistent height */
+    width: 500px; /* Set consistent width */
+    height: 200px; /* Set consistent height */
     margin: 20px auto; /* Center them horizontally */
 }
 
@@ -66,8 +66,8 @@
 
     /* Adjust sponsor sizes on mobile */
     .Sponsor1, .Sponsor2 {
-        width: 150px; /* Consistent width for mobile */
-        height: 75px; /* Consistent height for mobile */
+        width: 200px; /* Consistent width for mobile */
+        height: 10px; /* Consistent height for mobile */
         margin: 10px 0; /* Reduced margin for tighter spacing */
     }
 }
