@@ -5,6 +5,7 @@ import SpecialThanks from '../assets/SS_SpecialThanks.png';
 import MadeWithLove from '../assets/SS_MadeWithLove.png';
 
 import Sponsor1 from '../assets/SS_Sponsor1.png';
+import Sponsor2 from '../assets/SS_Sponsor2_Google.png';
 
 const SponsorPage = () => {
 
@@ -18,6 +19,7 @@ const SponsorPage = () => {
                 <img className="MadeWithLove" src={MadeWithLove} alt="MadeWithLoveInNorman" />
 
                 <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
+                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
 
             </div>
 
