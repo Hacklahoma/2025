@@ -1,38 +1,44 @@
-import React from 'react';
-import './SponsorPage.css';
+import React from "react";
+import "./SponsorPage.css";
 
-import SpecialThanks from '../assets/SS_SpecialThanks.png';
-import MadeWithLove from '../assets/SS_MadeWithLove.png';
+import SpecialThanks from "../assets/SS_SpecialThanks.png";
+import MadeWithLove from "../assets/SS_MadeWithLove.png";
 
-import Sponsor1 from '../assets/SS_Sponsor1.png';
-import Sponsor2 from '../assets/SS_Sponsor2_Google.png';
+import Sponsor1 from "../assets/SS_Sponsor1.png";
+import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
 
 const SponsorPage = () => {
-    return (
-        <div className="sponsor-page">
+  const sponsors = [
+    { src: Sponsor1, alt: "Sponsor1 (Home Creations)" },
+    { src: Sponsor2, alt: "Sponsor2 (Google)" },
+    // Add more sponsors here by extending the array
+  ];
 
-            {/* Desktop Layout */}
-            <div className="sponsor-page-desktop">
-                <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
-                <img className="MadeWithLove" src={MadeWithLove} alt="Made With Love In Norman" />
+  return (
+    <div className="sponsor-page">
+      {/* Header section */}
+      <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
 
-                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
-                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
-            </div>
+      {/* Sponsor grid */}
+      <div className="sponsor-grid">
+        {sponsors.map((sponsor, index) => (
+          <img
+            key={index}
+            className="sponsor-image"
+            src={sponsor.src}
+            alt={sponsor.alt}
+          />
+        ))}
+      </div>
 
-            {/* Mobile Layout */}
-            <div className="sponsor-page-mobile">
-                {/* You can reuse the same background images or omit them for mobile */}
-                <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
-                <img className="MadeWithLove" src={MadeWithLove} alt="Made With Love In Norman" />
-
-                {/* Mobile-specific sponsor images (same ones or different versions) */}
-                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
-                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
-            </div>
-
-        </div>
-    );
+      {/* Footer section */}
+      <img
+        className="MadeWithLove"
+        src={MadeWithLove}
+        alt="Made With Love In Norman"
+      />
+    </div>
+  );
 };
 
 export default SponsorPage;
