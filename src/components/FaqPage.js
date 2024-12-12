@@ -7,6 +7,8 @@ import FAQText from '../assets/S3_FAQ.png';
 // Mobile Assets
 import MobileFAQText from '../assets/MS3_FAQ.png';
 
+const isMobile = window.innerWidth <= 751; // Check if the device is mobile
+
 const FaqPage = () => {
 
     const faqQuestions = [
@@ -120,7 +122,12 @@ const FaqPage = () => {
             {selectedQuestionIndex !== null && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="modal-close" onClick={closeModal}>×</button>
+                        <button
+                            className={isMobile ? "modal-close-mobile" : "modal-close"}
+                            onClick={closeModal}
+                        >
+                            ×
+                        </button>
                         <div className="modal-text">
                             {faqAnswers[selectedQuestionIndex]}
                         </div>
