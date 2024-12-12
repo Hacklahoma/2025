@@ -1,5 +1,3 @@
-/* SponsorPage.css */
-
 /* General container for both desktop and mobile */
 .sponsor-page {
     position: relative;
@@ -10,6 +8,7 @@
     background: black;
     width: 100%;
     min-height: 100vh; /* Ensure full screen height */
+    flex-direction: column; /* Stack items vertically */
 }
 
 /* Desktop container */
@@ -20,6 +19,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Wrap items if needed */
+    margin-top: 20px;
 }
 
 /* Mobile container: initially hidden */
@@ -34,6 +35,7 @@
     flex-direction: column;
 }
 
+/* Sponsor images adjustments */
 .Sponsor1, .Sponsor2 {
     position: relative;
     object-fit: contain;
@@ -42,14 +44,29 @@
     margin: 20px auto; /* Center them horizontally */
 }
 
-/* Override global img style for only background images */
-.SpecialThanks, .MadeWithLove {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
+/* Special Thanks text/image adjustments */
+.SpecialThanks {
+    position: relative;
+    width: auto; /* Allow the width to adjust based on content */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    margin-bottom: 20px; /* Add spacing between text and sponsors */
+    text-align: center;
+    color: white; /* Ensure it contrasts against the black background */
+    font-size: 24px; /* Adjust font size */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Made With Love adjustments */
+.MadeWithLove {
+    position: relative;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-top: 20px; /* Space from the bottom */
+    text-align: center;
+    color: white;
+    font-size: 18px;
 }
 
 /* Media query for mobile devices (screen width <= 750px) */
@@ -66,9 +83,17 @@
 
     /* Adjust sponsor sizes on mobile */
     .Sponsor1, .Sponsor2 {
-        width: 200px; /* Consistent width for mobile */
-        height: 10px; /* Consistent height for mobile */
-        margin: 10px 0; /* Reduced margin for tighter spacing */
+        width: 350px; /* Adjusted for mobile */
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .SpecialThanks {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .MadeWithLove {
+        font-size: 16px; /* Adjust font size for mobile */
     }
 }
 
