@@ -92,29 +92,29 @@
 /* Aspect ratio adjustments for desktop */
 @media (max-aspect-ratio: 16/9) {
     .sponsor-page-desktop {
-        width: 100%;
-        height: auto;
+        width: 100vw;
+        height: calc(100vw * (9 / 16));
     }
 }
 
 @media (min-aspect-ratio: 16/9) {
     .sponsor-page-desktop {
-        width: auto;
-        height: 100%;
+        width: calc(100vh * (16 / 9));
+        height: 100vh;
     }
 }
 
 /* Aspect ratio adjustments for mobile */
 @media (max-aspect-ratio: 9/16) {
     .sponsor-page-mobile {
-        width: 100%;
-        height: auto;
+        width: 100vw;
+        height: calc(100vw * (16 / 9));
     }
 }
 
 @media (min-aspect-ratio: 9/16) {
     .sponsor-page-mobile {
-        width: auto;
-        height: 100%;
+        width: calc(100vh * (9 / 16));
+        height: 100vh;
     }
 }
