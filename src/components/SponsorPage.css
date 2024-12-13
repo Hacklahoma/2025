@@ -51,22 +51,25 @@
 /* Unified styles for the sponsor section */
 .sponsor-page-mobile {
     display: flex; /* Ensure the container is visible */
-    flex-wrap: wrap; /* Wrap content for responsiveness */
+    flex-wrap: nowrap; /* Keep sponsors on a single row (or column if stacked) */
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    padding: 10px; /* Add some padding for better appearance */
-    background: black; /* Retain the black background */
+    padding: 10px; /* Add padding for better spacing */
+    background: black; /* Ensure the background is visible */
     width: 100%; /* Full width */
-    height: auto; /* Adjust height automatically */
-    overflow: hidden; /* Prevent overflow issues */
+    height: auto; /* Automatically adjust height */
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
-/* General sponsor image styles for mobile */
-.sponsor-page-mobile img {
-    max-width: 80%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px 0; /* Add spacing between images */
-    object-fit: contain; /* Prevent distortion */
+/* Mobile-specific styles for sponsors */
+.sponsor-page-mobile .Sponsor1 {
+    max-width: 90%; /* Adjust size for better appearance */
+    margin-left: 0; /* Remove unnecessary offsets for mobile */
+}
+
+.sponsor-page-mobile .Sponsor2 {
+    max-width: 50%; /* Ensure the smaller sponsor fits well */
+    transform: none; /* Reset transform for better alignment */
 }
 
 /* Override global img style for only background images (SpecialThanks, MadeWithLove) */
