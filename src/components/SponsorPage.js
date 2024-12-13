@@ -1,44 +1,35 @@
-import React from "react";
-import "./SponsorPage.css";
+import React from 'react';
+import './SponsorPage.css';
 
-import SpecialThanks from "../assets/SS_SpecialThanks.png";
-import MadeWithLove from "../assets/SS_MadeWithLove.png";
+import SpecialThanks from '../assets/SS_SpecialThanks.png';
+import MadeWithLove from '../assets/SS_MadeWithLove.png';
 
-import Sponsor1 from "../assets/SS_Sponsor1.png";
-import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
+import Sponsor1 from '../assets/SS_Sponsor1.png';
+import Sponsor2 from '../assets/SS_Sponsor2_Google.png';
 
 const SponsorPage = () => {
-  const sponsors = [
-    { src: Sponsor1, alt: "Sponsor1 (Home Creations)" },
-    { src: Sponsor2, alt: "Sponsor2 (Google)" },
-    // Add more sponsors here by extending the array
-  ];
 
-  return (
-    <div className="sponsor-page">
-      {/* Special Thanks Section */}
-      <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
+    return (
+        <div className="sponsor-page">
 
-      {/* Sponsor Grid */}
-      <div className="sponsor-grid">
-        {sponsors.map((sponsor, index) => (
-          <img
-            key={index}
-            className="sponsor-image"
-            src={sponsor.src}
-            alt={sponsor.alt}
-          />
-        ))}
-      </div>
+            {/* Desktop Layout */}
+            <div className="sponsor-page-desktop">
 
-      {/* Footer Section */}
-      <img
-        className="MadeWithLove"
-        src={MadeWithLove}
-        alt="Made With Love In Norman"
-      />
-    </div>
-  );
+                <img className="SpecialThanks" src={SpecialThanks} alt="SpecialThanks" />
+                <img className="MadeWithLove" src={MadeWithLove} alt="MadeWithLoveInNorman" />
+
+                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
+                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
+
+            </div>
+
+            {/* Mobile Layout */}
+            <div className="sponsor-page-mobile">
+
+            </div>
+
+        </div>
+      );
 };
 
 export default SponsorPage;

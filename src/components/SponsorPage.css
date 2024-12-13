@@ -1,64 +1,125 @@
+/* SponsorPage.css */
+
+.Sponsor1 {
+    position: relative;
+    object-fit: contain;
+    max-width: 70%; /* Adjust this value as needed */
+    height: auto;
+    margin-left: -200px;
+}
+
+.Sponsor2 {
+    position: relative;
+    object-fit: contain;
+    max-width: 25%; /* Adjust this value as needed */
+    height: auto;
+    transform: translateX(-50%)
+}
+
+/* Adjust sponsor images to not fill entire container */
+/* .Sponsor1, .Sponsor2 {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: 30%;
+    object-fit: contain;
+    margin: 0 20px;
+} */
+
 /* General container for both desktop and mobile */
 .sponsor-page {
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ensure content starts at the top */
-    align-items: center;
-    background: black;
-    width: 100%;
-    min-height: 100vh; /* Full screen height */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box;
+    background: black;
 }
 
-/* Common styles for text sections */
-.SpecialThanks,
-.MadeWithLove {
-    color: white;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.SpecialThanks {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.MadeWithLove {
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-/* Sponsor grid container */
-.sponsor-grid {
-    display: grid;
-    gap: 20px;
+/* Desktop container: Maintain a 16:9 aspect ratio (1920x1080) */
+.sponsor-page-desktop {
+    position: relative;
     width: 100%;
-    max-width: 1200px; /* Limit width for better alignment */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-    justify-items: center; /* Center each logo */
-    padding: 20px 10px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Sponsor image styling */
-.sponsor-image {
-    width: 100%; /* Responsive width */
-    max-width: 300px; /* Limit max size */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain;
+/* Mobile-specific container, maintaining 9:16 aspect ratio (720x1280) */
+.sponsor-page-mobile {
+    display: none; /* Hide mobile by default */
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-/* Mobile-specific adjustments */
+/* Override global img style for only background images (SpecialThanks, MadeWithLove) */
+.SpecialThanks, .MadeWithLove {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query for mobile devices (screen width <= 750px) */
 @media (max-width: 750px) {
-    .SpecialThanks {
-        font-size: 1.8rem;
+    /* Hide the desktop container */
+    .sponsor-page-desktop {
+        display: none;
     }
-    .MadeWithLove {
-        font-size: 1.2rem;
+
+    /* Show the mobile container */
+    .sponsor-page-mobile {
+        display: flex;
     }
-    .sponsor-image {
-        max-width: 250px; /* Smaller logos for mobile */
+}
+
+/* Media query for desktop devices (screen width > 750px) */
+@media (min-width: 751px) {
+    /* Show the desktop container */
+    .sponsor-page-desktop {
+        display: flex;
+    }
+
+    /* Hide the mobile container */
+    .sponsor-page-mobile {
+        display: none;
+    }
+}
+
+/* Adjust the sponsor-page-desktop for desktop */
+@media (max-aspect-ratio: 16/9) {
+    /* When the viewport is taller than 16:9 */
+    .sponsor-page-desktop {
+        width: 100vw;
+        height: calc(100vw * (9 / 16));
+    }
+}
+@media (min-aspect-ratio: 16/9) {
+    /* When the viewport is wider than 16:9 */
+    .sponsor-page-desktop {
+        width: calc(100vh * (16 / 9));
+        height: 100vh;
+    }
+}
+
+/* Adjust the sponsor-page-mobile for mobile */
+@media (max-aspect-ratio: 9/16) {
+    /* When the viewport is taller than 9:16 */
+    .sponsor-page-mobile {
+        width: 100vw;
+        height: calc(100vw * (16 / 9));
+    }
+}
+@media (min-aspect-ratio: 9/16) {
+    /* When the viewport is wider than 9:16 */
+    .sponsor-page-mobile {
+        width: calc(100vh * (9 / 16));
+        height: 100vh;
     }
 }
