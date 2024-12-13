@@ -2,57 +2,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #000; /* Black background */
-    color: #fff; /* White text */
+    background: black; /* Black background */
+    color: white; /* White text */
     min-height: 100vh;
     padding: 40px 20px;
     box-sizing: border-box;
+    overflow-y: auto; /* Ensure scrolling if content overflows vertically */
 }
 
-.sponsor-page img {
-    max-width: 100%;
+.SpecialThanks {
+    margin: 20px 0;
+    max-width: 400px; /* Limit image size */
+    width: 100%;
     height: auto;
-    display: block;
 }
 
-/* Special Thanks and Made With Love sections */
-.SpecialThanks,
 .MadeWithLove {
     margin: 20px 0;
-    max-width: 500px;
+    max-width: 300px; /* Limit image size */
     width: 100%;
-    text-align: center; /* Center align for text */
+    height: auto;
+    text-align: center;
 }
 
 /* Sponsor grid container */
 .sponsor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible layout */
+    gap: 20px;
     width: 100%;
     max-width: 1200px;
+    margin: 20px 0;
     justify-items: center;
     align-items: center;
-    margin: 20px 0;
 }
 
-/* Sponsor image styling */
+/* Sponsor image container */
 .sponsor-image {
     width: 100%;
-    max-width: 250px;
-    height: 150px; /* Fixed height for uniformity */
-    object-fit: contain; /* Maintain aspect ratio */
-    background-color: #fff; /* Optional: add a background for contrast */
-    padding: 10px;
+    max-width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    background-color: white; /* Background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetic */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Prevent content from exceeding bounds */
 }
 
-/* Ensure no image overflows its section */
 .sponsor-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 90%; /* Shrink if too wide */
+    max-height: 90%; /* Shrink if too tall */
+    object-fit: contain; /* Ensure logo aspect ratio */
 }
 
 /* Responsive adjustments */
@@ -60,10 +62,11 @@
     .SpecialThanks,
     .MadeWithLove {
         max-width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
+
     .sponsor-image {
-        max-width: 100%;
-        height: auto;
+        max-width: 150px; /* Smaller on mobile */
+        height: 120px;
     }
 }

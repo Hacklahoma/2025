@@ -9,7 +9,7 @@ import Sponsor1 from "../assets/SS_Sponsor1.png";
 import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
 
 const SponsorPage = () => {
-  // Define sponsors with constraints
+  // Sponsors array
   const sponsors = [
     { src: Sponsor1, alt: "Sponsor 1 (Home Creations)" },
     { src: Sponsor2, alt: "Sponsor 2 (Google)" },
@@ -23,12 +23,9 @@ const SponsorPage = () => {
       {/* Sponsor Grid */}
       <div className="sponsor-grid">
         {sponsors.map((sponsor, index) => (
-          <img
-            key={index}
-            className="sponsor-image"
-            src={sponsor.src}
-            alt={sponsor.alt}
-          />
+          <div className="sponsor-image" key={index}>
+            <img src={sponsor.src} alt={sponsor.alt} />
+          </div>
         ))}
       </div>
 
