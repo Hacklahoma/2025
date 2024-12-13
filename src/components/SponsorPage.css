@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: black;
-    color: white;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
-    overflow: hidden; /* Ensure content fits within viewport */
 }
 
 .sponsor-page img {
@@ -16,46 +15,47 @@
     display: block;
 }
 
-/* Special Thanks and Made With Love: centered and resized if necessary */
-.SpecialThanks {
-    margin-bottom: 20px;
-    font-size: 2rem; /* If using actual text instead of image, adjust as needed */
-}
-
+/* Special Thanks and Made With Love sections */
+.SpecialThanks,
 .MadeWithLove {
-    margin-top: 20px;
-    font-size: 1.5rem; /* If using actual text instead of image, adjust as needed */
+    margin: 20px 0;
+    max-width: 500px;
+    width: 100%;
 }
 
 /* Sponsor grid container */
 .sponsor-grid {
     display: grid;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
     width: 100%;
     max-width: 1200px;
-    margin: 20px 0; /* Space between top/bottom and sponsors */
-    /* On larger screens, try to place sponsors side by side */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
-    align-items: start;
+    align-items: center;
+    margin: 20px 0;
 }
 
 /* Sponsor image styling */
 .sponsor-image {
     width: 100%;
-    max-width: 300px; /* Limit max width for bigger screens */
-    object-fit: contain;
+    max-width: 250px;
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: contain; /* Ensure logos maintain their aspect ratio */
+    background-color: #fff; /* Optional: add a background for better contrast */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetic */
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 750px) {
-    .SpecialThanks {
+    .SpecialThanks,
+    .MadeWithLove {
+        max-width: 100%;
         font-size: 1.5rem;
     }
-    .MadeWithLove {
-        font-size: 1rem;
-    }
     .sponsor-image {
-        max-width: 100%; /* Let them be as wide as the container on mobile */
+        max-width: 100%;
+        height: auto;
     }
 }
