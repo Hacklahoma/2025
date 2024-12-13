@@ -16,10 +16,10 @@ const SponsorPage = () => {
 
   return (
     <div className="sponsor-page">
-      {/* Header section */}
+      {/* Special Thanks Section */}
       <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
 
-      {/* Sponsor grid */}
+      {/* Sponsor Grid */}
       <div className="sponsor-grid">
         {sponsors.map((sponsor, index) => (
           <img
@@ -31,7 +31,7 @@ const SponsorPage = () => {
         ))}
       </div>
 
-      {/* Footer section */}
+      {/* Footer Section */}
       <img
         className="MadeWithLove"
         src={MadeWithLove}
