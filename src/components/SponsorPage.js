@@ -8,35 +8,27 @@ import Sponsor1 from "../assets/SS_Sponsor1.png";
 import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
 
 const SponsorPage = () => {
+  // Easily add more sponsors here
   const sponsors = [
-    { src: Sponsor1, alt: "Sponsor1 (Home Creations)" },
-    { src: Sponsor2, alt: "Sponsor2 (Google)" },
-    // Add more sponsors here by extending the array
+    { src: Sponsor1, alt: "Sponsor 1 (Home Creations)" },
+    { src: Sponsor2, alt: "Sponsor 2 (Google)" },
+    // Add more sponsors by extending this array
   ];
 
   return (
     <div className="sponsor-page">
-      {/* Special Thanks Section */}
+      {/* Special Thanks */}
       <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
 
       {/* Sponsor Grid */}
       <div className="sponsor-grid">
-        {sponsors.map((sponsor, index) => (
-          <img
-            key={index}
-            className="sponsor-image"
-            src={sponsor.src}
-            alt={sponsor.alt}
-          />
+        {sponsors.map((s, i) => (
+          <img key={i} className="sponsor-image" src={s.src} alt={s.alt} />
         ))}
       </div>
 
-      {/* Footer Section */}
-      <img
-        className="MadeWithLove"
-        src={MadeWithLove}
-        alt="Made With Love In Norman"
-      />
+      {/* Made With Love */}
+      <img className="MadeWithLove" src={MadeWithLove} alt="Made With Love In Norman" />
     </div>
   );
 };
