@@ -21,6 +21,7 @@
     margin: 20px 0;
     max-width: 500px;
     width: 100%;
+    text-align: center; /* Center align for text */
 }
 
 /* Sponsor grid container */
@@ -39,12 +40,19 @@
 .sponsor-image {
     width: 100%;
     max-width: 250px;
-    height: 150px; /* Set a fixed height for uniformity */
-    object-fit: contain; /* Ensure logos maintain their aspect ratio */
-    background-color: #fff; /* Optional: add a background for better contrast */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: contain; /* Maintain aspect ratio */
+    background-color: #fff; /* Optional: add a background for contrast */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetic */
+}
+
+/* Ensure no image overflows its section */
+.sponsor-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Responsive adjustments */

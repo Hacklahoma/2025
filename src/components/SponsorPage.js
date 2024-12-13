@@ -9,11 +9,10 @@ import Sponsor1 from "../assets/SS_Sponsor1.png";
 import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
 
 const SponsorPage = () => {
-  // Sponsor array
+  // Define sponsors with constraints
   const sponsors = [
     { src: Sponsor1, alt: "Sponsor 1 (Home Creations)" },
     { src: Sponsor2, alt: "Sponsor 2 (Google)" },
-    // Add more sponsors here as needed
   ];
 
   return (
