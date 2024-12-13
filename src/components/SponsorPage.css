@@ -1,30 +1,20 @@
-/* SponsorPage.css */
-
+/* Sponsor1 styling */
 .Sponsor1 {
     position: relative;
     object-fit: contain;
-    max-width: 70%; /* Adjust this value as needed */
+    max-width: 70%; /* Default for desktop */
     height: auto;
     margin-left: -200px;
 }
 
+/* Sponsor2 styling */
 .Sponsor2 {
     position: relative;
     object-fit: contain;
-    max-width: 25%; /* Adjust this value as needed */
+    max-width: 25%; /* Default for desktop */
     height: auto;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
-
-/* Adjust sponsor images to not fill entire container */
-/* .Sponsor1, .Sponsor2 {
-    position: static;
-    width: auto;
-    height: auto;
-    max-width: 30%;
-    object-fit: contain;
-    margin: 0 20px;
-} */
 
 /* General container for both desktop and mobile */
 .sponsor-page {
@@ -48,28 +38,33 @@
     align-items: center;
 }
 
-/* Unified styles for the sponsor section */
+/* Mobile container: Adjusted for proper display */
 .sponsor-page-mobile {
     display: flex; /* Ensure the container is visible */
-    flex-wrap: nowrap; /* Keep sponsors on a single row (or column if stacked) */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    padding: 10px; /* Add padding for better spacing */
+    padding: 10px; /* Add padding for spacing */
     background: black; /* Ensure the background is visible */
     width: 100%; /* Full width */
     height: auto; /* Automatically adjust height */
     overflow: hidden; /* Prevent content from overflowing */
 }
 
-/* Mobile-specific styles for sponsors */
+/* Mobile-specific styles for Sponsor1 */
 .sponsor-page-mobile .Sponsor1 {
     max-width: 90%; /* Adjust size for better appearance */
-    margin-left: 0; /* Remove unnecessary offsets for mobile */
+    margin-left: 0; /* Remove unnecessary offsets */
+    object-fit: contain; /* Prevent distortion */
+    margin-bottom: 20px; /* Add spacing below */
 }
 
+/* Mobile-specific styles for Sponsor2 */
 .sponsor-page-mobile .Sponsor2 {
     max-width: 50%; /* Ensure the smaller sponsor fits well */
-    transform: none; /* Reset transform for better alignment */
+    transform: none; /* Reset transform for proper alignment */
+    object-fit: contain; /* Prevent distortion */
+    margin-bottom: 20px; /* Add spacing below */
 }
 
 /* Override global img style for only background images (SpecialThanks, MadeWithLove) */
