@@ -1,7 +1,6 @@
 import React from "react";
 import "./SponsorPage.css";
 
-// Import assets
 import SpecialThanks from "../assets/SS_SpecialThanks.png";
 import MadeWithLove from "../assets/SS_MadeWithLove.png";
 
@@ -9,27 +8,30 @@ import Sponsor1 from "../assets/SS_Sponsor1.png";
 import Sponsor2 from "../assets/SS_Sponsor2_Google.png";
 
 const SponsorPage = () => {
-  // Sponsors array
   const sponsors = [
-    { src: Sponsor1, alt: "Sponsor 1 (Home Creations)" },
-    { src: Sponsor2, alt: "Sponsor 2 (Google)" },
+    { src: Sponsor1, alt: "Sponsor1 (Home Creations)" },
+    { src: Sponsor2, alt: "Sponsor2 (Google)" },
+    // Add more sponsors here by extending the array
   ];
 
   return (
     <div className="sponsor-page">
-      {/* Special Thanks */}
+      {/* Special Thanks Section */}
       <img className="SpecialThanks" src={SpecialThanks} alt="Special Thanks" />
 
       {/* Sponsor Grid */}
       <div className="sponsor-grid">
         {sponsors.map((sponsor, index) => (
-          <div className="sponsor-image" key={index}>
-            <img src={sponsor.src} alt={sponsor.alt} />
-          </div>
+          <img
+            key={index}
+            className="sponsor-image"
+            src={sponsor.src}
+            alt={sponsor.alt}
+          />
         ))}
       </div>
 
-      {/* Made With Love */}
+      {/* Footer Section */}
       <img
         className="MadeWithLove"
         src={MadeWithLove}

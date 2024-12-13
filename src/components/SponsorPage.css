@@ -1,72 +1,64 @@
+/* General container for both desktop and mobile */
 .sponsor-page {
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts at the top */
     align-items: center;
-    background: black; /* Black background */
-    color: white; /* White text */
-    min-height: 100vh;
-    padding: 40px 20px;
+    background: black;
+    width: 100%;
+    min-height: 100vh; /* Full screen height */
+    overflow: hidden;
+    padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* Ensure scrolling if content overflows vertically */
+}
+
+/* Common styles for text sections */
+.SpecialThanks,
+.MadeWithLove {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .SpecialThanks {
-    margin: 20px 0;
-    max-width: 400px; /* Limit image size */
-    width: 100%;
-    height: auto;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .MadeWithLove {
-    margin: 20px 0;
-    max-width: 300px; /* Limit image size */
-    width: 100%;
-    height: auto;
-    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 /* Sponsor grid container */
 .sponsor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible layout */
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 20px 0;
-    justify-items: center;
-    align-items: center;
+    max-width: 1200px; /* Limit width for better alignment */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    justify-items: center; /* Center each logo */
+    padding: 20px 10px;
 }
 
-/* Sponsor image container */
+/* Sponsor image styling */
 .sponsor-image {
-    width: 100%;
-    max-width: 200px; /* Fixed width */
-    height: 150px; /* Fixed height */
-    background-color: white; /* Background for contrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    overflow: hidden; /* Prevent content from exceeding bounds */
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Limit max size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
 }
 
-.sponsor-image img {
-    max-width: 90%; /* Shrink if too wide */
-    max-height: 90%; /* Shrink if too tall */
-    object-fit: contain; /* Ensure logo aspect ratio */
-}
-
-/* Responsive adjustments */
+/* Mobile-specific adjustments */
 @media (max-width: 750px) {
-    .SpecialThanks,
+    .SpecialThanks {
+        font-size: 1.8rem;
+    }
     .MadeWithLove {
-        max-width: 100%;
         font-size: 1.2rem;
     }
-
     .sponsor-image {
-        max-width: 150px; /* Smaller on mobile */
-        height: 120px;
+        max-width: 250px; /* Smaller logos for mobile */
     }
 }
