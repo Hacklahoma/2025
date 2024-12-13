@@ -50,7 +50,7 @@
 
 /* Mobile-specific container, maintaining 9:16 aspect ratio (720x1280) */
 .sponsor-page-mobile {
-    display: none; /* Hide mobile by default */
+    display: flex; /* Hide mobile by default */
     position: relative;
     width: 100%;
     height: auto;
