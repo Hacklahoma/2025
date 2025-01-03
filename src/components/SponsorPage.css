@@ -1,99 +1,102 @@
-/* General container */
+/* Sponsor1 styling */
+.Sponsor1 {
+    position: relative;
+    object-fit: contain;
+    max-width: 70%; /* Default for desktop */
+    height: auto;
+    margin-left: -200px;
+}
+
+/* Sponsor2 styling */
+.Sponsor2 {
+    position: relative;
+    object-fit: contain;
+    max-width: 25%; /* Default for desktop */
+    height: auto;
+    transform: translateX(-50%);
+}
+
+/* General container for both desktop and mobile */
 .sponsor-page {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     overflow: hidden;
     background: black;
-    width: 100%;
 }
 
-/* Desktop container */
+/* Desktop container: Maintain a 16:9 aspect ratio (1920x1080) */
 .sponsor-page-desktop {
     position: relative;
     width: 100%;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 
-      Use a row layout for desktop 
-      (You can adjust to your preference) 
-    */
-    gap: 2rem; 
 }
 
-/* Mobile container */
+/* Mobile-specific container */
 .sponsor-page-mobile {
-    display: none; /* hidden by default for desktop widths */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: black;
-    width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for spacing */
+    background: black; /* Set background color */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
     overflow: hidden;
-    gap: 1rem; /* spacing between images */
 }
 
-/* Sponsor images - common styling */
-.Sponsor1, .Sponsor2 {
-    position: relative;
-    object-fit: contain; /* makes sure it doesn't stretch awkwardly */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* center images horizontally */
-}
-
-/* We can allow one sponsor to be a bit bigger and one smaller if desired */
-.Sponsor1 {
-    max-width: 60%; /* adjust to taste */
-}
-
-.Sponsor2 {
-    max-width: 30%; /* adjust to taste */
-}
-
-/* Special Thanks and Made With Love images, if needed */
-.SpecialThanks, .MadeWithLove {
-    max-width: 50%; 
-    height: auto;
-    display: block;
-}
-
-/* 
-  Hide desktop container and show mobile container
-  on screens smaller than 751px 
-*/
+/* Adjustments for Sponsor1 on mobile */
 @media (max-width: 750px) {
-    .sponsor-page-desktop {
-        display: none;
+    .sponsor-page-mobile .Sponsor1 {
+        max-width: 90%; /* Resize for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 0; /* Remove unnecessary offsets */
+        margin-bottom: 20px; /* Add spacing */
+        object-fit: contain; /* Prevent distortion */
     }
+
+    .sponsor-page-mobile .Sponsor2 {
+        max-width: 70%; /* Resize for mobile */
+        height: auto; /* Maintain aspect ratio */
+        transform: none; /* Remove transform for proper alignment */
+        margin-bottom: 20px; /* Add spacing */
+        object-fit: contain; /* Prevent distortion */
+    }
+
+    .sponsor-page-desktop {
+        display: none; /* Hide desktop container on mobile */
+    }
+
     .sponsor-page-mobile {
-        display: flex;
+        display: flex; /* Ensure mobile container is visible */
     }
 }
 
-/* Show desktop container and hide mobile container on screens >= 751px */
+/* Desktop-specific styles */
 @media (min-width: 751px) {
     .sponsor-page-desktop {
         display: flex;
     }
+
     .sponsor-page-mobile {
-        display: none;
+        display: none; /* Hide mobile container */
     }
 }
 
-/* --- Aspect Ratio Adjustments (Desktop) --- */
+/* Aspect ratio adjustments for desktop */
 @media (max-aspect-ratio: 16/9) {
     .sponsor-page-desktop {
         width: 100vw;
         height: calc(100vw * (9 / 16));
     }
 }
+
 @media (min-aspect-ratio: 16/9) {
     .sponsor-page-desktop {
         width: calc(100vh * (16 / 9));
@@ -101,13 +104,14 @@
     }
 }
 
-/* --- Aspect Ratio Adjustments (Mobile) --- */
+/* Aspect ratio adjustments for mobile */
 @media (max-aspect-ratio: 9/16) {
     .sponsor-page-mobile {
         width: 100vw;
         height: calc(100vw * (16 / 9));
     }
 }
+
 @media (min-aspect-ratio: 9/16) {
     .sponsor-page-mobile {
         width: calc(100vh * (9 / 16));
