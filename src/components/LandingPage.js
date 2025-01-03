@@ -38,11 +38,6 @@ const LandingPage = () => {
                 
                 <img className="subtitle HacklahomaSubtitle" src={HacklahomaSubtitle} alt="Hacklahoma Subtitle" />
 
-                <div className="location-date">
-                  <p>DEH, Norman, Oklahoma</p>
-                  <p>Feb 15-16th</p>
-                </div>
-
                 <img className="city City" src={City} alt="City" />
                 <img className="city Clouds" src={Clouds} alt="Clouds" />
 
@@ -62,11 +57,6 @@ const LandingPage = () => {
                 <img className="title HacklahomaTitle2025" src={MobileHacklahomaTitle2025} alt="Hacklahoma Title 2025" />
 
                 <img className="subtitle HacklahomaSubtitle" src={MobileHacklahomaSubtitle} alt="Hacklahoma Subtitle" />
-                
-                <div className="location-date-mobile">
-                  <p>DEH, Norman, Oklahoma</p>
-                  <p>Feb 15-16th</p>
-                </div>
 
                 <img className="city City" src={MobileCity} alt="City" />
                 <img className="city Clouds" src={MobileClouds} alt="Clouds" />

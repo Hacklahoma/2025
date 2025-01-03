@@ -188,34 +188,6 @@ img {
   animation: fadeIn 1s ease-out 1s forwards;
 }
 
-/* Location/Date text (Desktop) */
-.location-date {
-  position: absolute;
-  top: 58%; /* Adjust based on your layout */
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 1s ease-out 2s forwards; /* fade in after subtitle */
-  text-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.25);
-}
-
-/* Location/Date text (Mobile) */
-.location-date-mobile {
-  position: absolute;
-  top: 52%; /* Adjust based on your mobile layout */
-  width: 100%;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 1s ease-out 2s forwards;
-  text-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.25);
-}
-
 .apply-button {
   position: relative;
   width: 20%;
