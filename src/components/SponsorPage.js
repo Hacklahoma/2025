@@ -1,8 +1,12 @@
 import React from 'react';
 import './SponsorPage.css';
 
+// Desktop Images
 import SpecialThanks from '../assets/SS_SpecialThanks.png';
 import MadeWithLove from '../assets/SS_MadeWithLove.png';
+
+// Mobile Images
+import MobileText from '../assets/MSS_Text.png';
 
 import Sponsor1 from '../assets/SS_Sponsor1.png';
 import Sponsor2 from '../assets/SS_Sponsor2_Google.png';
@@ -25,6 +29,11 @@ const SponsorPage = () => {
 
             {/* Mobile Layout */}
             <div className="sponsor-page-mobile">
+
+                <img className="SpecialThanks" src={MobileText} alt="MobileText" />
+
+                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
+                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
 
             </div>
 
