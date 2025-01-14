@@ -8,8 +8,15 @@ import MadeWithLove from '../assets/SS_MadeWithLove.png';
 // Mobile Images
 import MobileText from '../assets/MSS_Text.png';
 
-import Sponsor1 from '../assets/SS_Sponsor1.png';
-import Sponsor2 from '../assets/SS_Sponsor2_Google.png';
+// Sponsors
+import HomeCreations from '../assets/Sponsors/HomeCreations.png';
+import Paycom from '../assets/Sponsors/Paycom.png';
+import Google from '../assets/Sponsors/Google.png';
+import BakerHughes from '../assets/Sponsors/BakerHughes.png';
+import Devon from '../assets/Sponsors/Devon.png';
+import Williams from '../assets/Sponsors/Williams.png';
+import Boeing from '../assets/Sponsors/Boeing.png';
+import CocaCola from '../assets/Sponsors/CocaCola.png';
 
 const SponsorPage = () => {
 
@@ -22,8 +29,18 @@ const SponsorPage = () => {
                 <img className="SpecialThanks" src={SpecialThanks} alt="SpecialThanks" />
                 <img className="MadeWithLove" src={MadeWithLove} alt="MadeWithLoveInNorman" />
 
-                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
-                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
+                <div className="logo-grid-container">
+                    <div className="logo-grid-desktop">
+                        <img src={HomeCreations} alt="Home Creations" style={{gridColumn: "1", gridRow: "1"}} />
+                        <img src={Paycom} alt="Paycom" style={{gridColumn: "2", gridRow: "1"}} />
+                        <img src={Google} alt="Google" style={{gridColumn: "3", gridRow: "1"}} />
+                        <img src={BakerHughes} alt="Baker Hughes" style={{gridColumn: "4", gridRow: "1"}} />
+                        <img src={Devon} alt="Devon" style={{gridColumn: "1", gridRow: "2"}} />
+                        <img src={Williams} alt="Williams" style={{gridColumn: "2", gridRow: "2"}} />
+                        <img src={Boeing} alt="Boeing" style={{gridColumn: "3", gridRow: "2"}} />
+                        <img src={CocaCola} alt="Coca Cola" style={{gridColumn: "4", gridRow: "2"}} />
+                    </div>
+                </div>
 
             </div>
 
@@ -32,8 +49,18 @@ const SponsorPage = () => {
 
                 <img className="SpecialThanks" src={MobileText} alt="MobileText" />
 
-                <img className="Sponsor1" src={Sponsor1} alt="Sponsor1 (Home Creations)" />
-                <img className="Sponsor2" src={Sponsor2} alt="Sponsor2 (Google)" />
+                <div className="logo-grid-container">
+                    <div className="logo-grid-mobile">
+                        <img src={HomeCreations} alt="Home Creations" style={{gridColumn: "1", gridRow: "1"}} />
+                        <img src={Paycom} alt="Paycom" style={{gridColumn: "2", gridRow: "1"}} />
+                        <img src={Google} alt="Google" style={{gridColumn: "1", gridRow: "2"}} />
+                        <img src={BakerHughes} alt="Baker Hughes" style={{gridColumn: "2", gridRow: "2"}} />
+                        <img src={Devon} alt="Devon" style={{gridColumn: "1", gridRow: "3"}} />
+                        <img src={Williams} alt="Williams" style={{gridColumn: "2", gridRow: "3"}} />
+                        <img src={Boeing} alt="Boeing" style={{gridColumn: "1", gridRow: "4"}} />
+                        <img src={CocaCola} alt="Coca Cola" style={{gridColumn: "2", gridRow: "4"}} />
+                    </div>
+                </div>
 
             </div>
 

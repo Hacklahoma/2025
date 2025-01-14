@@ -1,27 +1,11 @@
-/* Sponsor1 styling */
-.Sponsor1 {
-    position: relative;
-    object-fit: contain;
-    max-width: 70%; /* Default for desktop */
-    height: auto;
-    margin-left: -200px;
-}
-
-/* Sponsor2 styling */
-.Sponsor2 {
-    position: relative;
-    object-fit: contain;
-    max-width: 25%; /* Default for desktop */
-    height: auto;
-    transform: translateX(-50%);
-}
-
 /* General container for both desktop and mobile */
 .sponsor-page {
     position: relative;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
     overflow: hidden;
     background: black;
 }
@@ -33,49 +17,88 @@
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Mobile-specific container */
+/* Mobile-specific container, maintaining 9:16 aspect ratio (720x1280) */
 .sponsor-page-mobile {
+    display: none;
+    /* Hide mobile by default */
     position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-grid-container {
+    position: relative;
+
+    margin: auto;
+
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 10px; /* Add padding for spacing */
-    background: black; /* Set background color */
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height automatically */
-    overflow: hidden;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 60%;
+    width: 100%;
+    /* Ensure the grid spans the full width of the container */
+}
+
+.logo-grid-desktop {
+    display: grid;
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+
+    gap: 5%;
+    /* Space between images */
+    height: 60%;
+    width: 90%;
+    /* Ensure the grid spans the full width of the container */
+}
+
+.logo-grid-mobile {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+
+    gap: 5%;
+    /* Space between images */
+    height: 100%;
+    width: 90%;
+    /* Ensure the grid spans the full width of the container */
+}
+
+.logo-grid-desktop img {
+    position: relative;
+    height: auto;
+    padding: auto;
+    object-fit: contain;
+    /* Ensures logos fit within their space */
+    margin: auto;
+}
+
+.logo-grid-mobile img {
+    position: relative;
+    height: 70%;
+    padding: auto;
+    object-fit: contain;
+    /* Ensures logos fit within their space */
+    margin: auto;
 }
 
 /* Adjustments for Sponsor1 on mobile */
 @media (max-width: 750px) {
-    .sponsor-page-mobile .Sponsor1 {
-        max-width: 90%; /* Resize for mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-left: 0; /* Remove unnecessary offsets */
-        margin-bottom: 20px; /* Add spacing */
-        object-fit: contain; /* Prevent distortion */
-    }
-
-    .sponsor-page-mobile .Sponsor2 {
-        max-width: 70%; /* Resize for mobile */
-        height: auto; /* Maintain aspect ratio */
-        transform: none; /* Remove transform for proper alignment */
-        margin-bottom: 20px; /* Add spacing */
-        object-fit: contain; /* Prevent distortion */
-    }
-
     .sponsor-page-desktop {
-        display: none; /* Hide desktop container on mobile */
+        display: none;
+        /* Hide desktop container on mobile */
     }
 
     .sponsor-page-mobile {
-        display: flex; /* Ensure mobile container is visible */
+        display: flex;
+        /* Ensure mobile container is visible */
     }
 }
 
@@ -86,7 +109,8 @@
     }
 
     .sponsor-page-mobile {
-        display: none; /* Hide mobile container */
+        display: none;
+        /* Hide mobile container */
     }
 }
 
