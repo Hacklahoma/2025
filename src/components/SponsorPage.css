@@ -45,6 +45,15 @@
     /* Ensure the grid spans the full width of the container */
 }
 
+.logo-grid-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and optional shadow effect */
+}
+
+.logo-grid-container img:hover {
+    transform: scale(1.05); /* Scale the image slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to enhance the effect */
+}
+
 .logo-grid-desktop {
     display: grid;
 
@@ -69,6 +78,22 @@
     height: 100%;
     width: 90%;
     /* Ensure the grid spans the full width of the container */
+}
+
+.logo-grid-desktop a {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.logo-grid-mobile a {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
 }
 
 .logo-grid-desktop img {

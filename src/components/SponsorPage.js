@@ -31,16 +31,33 @@ const SponsorPage = () => {
 
                 <div className="logo-grid-container">
                     <div className="logo-grid-desktop">
-                        <img src={HomeCreations} alt="Home Creations" style={{gridColumn: "1", gridRow: "1"}} />
-                        <img src={Paycom} alt="Paycom" style={{gridColumn: "2", gridRow: "1"}} />
-                        <img src={Google} alt="Google" style={{gridColumn: "3", gridRow: "1"}} />
-                        <img src={BakerHughes} alt="Baker Hughes" style={{gridColumn: "4", gridRow: "1"}} />
-                        <img src={Devon} alt="Devon" style={{gridColumn: "1", gridRow: "2"}} />
-                        <img src={Williams} alt="Williams" style={{gridColumn: "2", gridRow: "2"}} />
-                        <img src={Boeing} alt="Boeing" style={{gridColumn: "3", gridRow: "2"}} />
-                        <img src={CocaCola} alt="Coca Cola" style={{gridColumn: "4", gridRow: "2"}} />
+                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer">
+                            <img src={HomeCreations} alt="Home Creations" style={{ gridColumn: "1", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Paycom} alt="Paycom" style={{ gridColumn: "2", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Google} alt="Google" style={{ gridColumn: "3", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer">
+                            <img src={BakerHughes} alt="Baker Hughes" style={{ gridColumn: "4", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Devon} alt="Devon" style={{ gridColumn: "1", gridRow: "2" }} />
+                        </a>
+                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Williams} alt="Williams" style={{ gridColumn: "2", gridRow: "2" }} />
+                        </a>
+                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Boeing} alt="Boeing" style={{ gridColumn: "3", gridRow: "2" }} />
+                        </a>
+                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
+                            <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "4", gridRow: "2" }} />
+                        </a>
                     </div>
                 </div>
+
 
             </div>
 
@@ -51,21 +68,37 @@ const SponsorPage = () => {
 
                 <div className="logo-grid-container">
                     <div className="logo-grid-mobile">
-                        <img src={HomeCreations} alt="Home Creations" style={{gridColumn: "1", gridRow: "1"}} />
-                        <img src={Paycom} alt="Paycom" style={{gridColumn: "2", gridRow: "1"}} />
-                        <img src={Google} alt="Google" style={{gridColumn: "1", gridRow: "2"}} />
-                        <img src={BakerHughes} alt="Baker Hughes" style={{gridColumn: "2", gridRow: "2"}} />
-                        <img src={Devon} alt="Devon" style={{gridColumn: "1", gridRow: "3"}} />
-                        <img src={Williams} alt="Williams" style={{gridColumn: "2", gridRow: "3"}} />
-                        <img src={Boeing} alt="Boeing" style={{gridColumn: "1", gridRow: "4"}} />
-                        <img src={CocaCola} alt="Coca Cola" style={{gridColumn: "2", gridRow: "4"}} />
+                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer">
+                            <img src={HomeCreations} alt="Home Creations" style={{ gridColumn: "1", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Paycom} alt="Paycom" style={{ gridColumn: "2", gridRow: "1" }} />
+                        </a>
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Google} alt="Google" style={{ gridColumn: "1", gridRow: "2" }} />
+                        </a>
+                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer">
+                            <img src={BakerHughes} alt="Baker Hughes" style={{ gridColumn: "2", gridRow: "2" }} />
+                        </a>
+                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Devon} alt="Devon" style={{ gridColumn: "1", gridRow: "3" }} />
+                        </a>
+                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Williams} alt="Williams" style={{ gridColumn: "2", gridRow: "3" }} />
+                        </a>
+                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Boeing} alt="Boeing" style={{ gridColumn: "1", gridRow: "4" }} />
+                        </a>
+                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
+                            <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "2", gridRow: "4" }} />
+                        </a>
                     </div>
                 </div>
 
             </div>
 
         </div>
-      );
+    );
 };
 
 export default SponsorPage;
