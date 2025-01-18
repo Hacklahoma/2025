@@ -17,6 +17,8 @@ import Devon from '../assets/Sponsors/Devon.png';
 import Williams from '../assets/Sponsors/Williams.png';
 import Boeing from '../assets/Sponsors/Boeing.png';
 import CocaCola from '../assets/Sponsors/CocaCola.png';
+import Koch from '../assets/Sponsors/Koch.png';
+import StandOutStickers from '../assets/Sponsors/StandOutStickers.png';
 
 const SponsorPage = () => {
 
@@ -55,6 +57,12 @@ const SponsorPage = () => {
                         <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
                             <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "4", gridRow: "2" }} />
                         </a>
+                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={Koch} alt="Koch" style={{ gridColumn: "5", gridRow: "1" }} />
+                        </a>
+                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
+                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "5", gridRow: "2" }} />
+                        </a>
                     </div>
                 </div>
 
@@ -91,6 +99,12 @@ const SponsorPage = () => {
                         </a>
                         <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
                             <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "2", gridRow: "4" }} />
+                        </a>
+                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={Koch} alt="Koch" style={{ gridColumn: "1", gridRow: "5" }} />
+                        </a>
+                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
+                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "2", gridRow: "5" }} />
                         </a>
                     </div>
                 </div>
