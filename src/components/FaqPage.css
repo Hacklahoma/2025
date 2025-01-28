@@ -1,5 +1,6 @@
 /* Import the Comic Neue font */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /* General container for both desktop and mobile */
 .faq-page {
@@ -8,7 +9,7 @@
     justify-content: center; /* Center content horizontally */
     align-items: center;     /* Center content vertically */
     overflow: hidden;
-    background: linear-gradient(to bottom, #C9E4DE, white);
+    background: linear-gradient(to bottom, #46298f, #000000);
 }
 
 /* Desktop container: Maintain a 16:9 aspect ratio (1920x1080) */
@@ -28,6 +29,12 @@
     height: auto;
     max-width: 100%;
     max-height: 100%;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure images cover the div without distorting */
   }
 
 /* Media query for mobile devices (screen width <= 750px) */
@@ -90,6 +97,26 @@
     }
   }
 
+
+/*Animation for the FAQ page*/
+  @keyframes hover {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .stars {
+    filter: drop-shadow(0 0.5rem 0.25rem rgb(42, 41, 41));
+    transform: translateY(50%);
+    animation: hover 5s ease-in-out 1s infinite;
+  }
+
 /* FAQ DESKTOP */
 
 .faq-container {
@@ -131,7 +158,7 @@
     font-size: min(3cqh, 1.5cqmax); /* Responsive text size */
     transition: transform 0.2s, box-shadow 0.2s; /* Hover effects */
     cursor: pointer;
-    font-family: 'Comic Neue', cursive; /* Apply comic font */
+    font-family: 'Bangers', cursive; /* Apply comic font */
 }
 
 /* Hover effect for each faq-section */
@@ -181,7 +208,7 @@
   font-size: min(4cqh, 2cqmax); /* Responsive text size */
   transition: transform 0.2s, box-shadow 0.2s; /* Hover effects */
   cursor: pointer;
-  font-family: 'Comic Neue', cursive; /* Apply comic font */
+  font-family: 'Bangers', cursive; /* Apply comic font */
 }
 
 /* Hover effect for each faq-section */
@@ -212,7 +239,7 @@
     width: 80%;
     max-width: 500px;
     position: relative;
-    font-family: 'Comic Neue', cursive; /* Same font as questions */
+    font-family: 'Bangers', cursive; /* Same font as questions */
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0.5vh 0.5vh 0.5vh rgba(0,0,0,0.3); /* Slight drop shadow */
@@ -227,7 +254,7 @@
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Bangers', sans-serif;
     color: black;
 }
 
@@ -240,7 +267,7 @@
     border: none;
     font-size: 1em;
     cursor: pointer;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Bangers', sans-serif;
     color: black;
 }
 
