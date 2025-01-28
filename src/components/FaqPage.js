@@ -3,9 +3,11 @@ import './FaqPage.css';
 
 // Desktop Assets
 import FAQText from '../assets/S3_FAQ.png';
+import Stars from '../assets/S3_Stars.png'; //Importing Stars image 
 
 // Mobile Assets
 import MobileFAQText from '../assets/MS3_FAQ.png';
+import MobileStars from '../assets/MS3_Stars.png'; //Importing Mobile Ver Stars image
 
 const isMobile = window.innerWidth <= 751; // Check if the device is mobile
 
@@ -64,8 +66,9 @@ const FaqPage = () => {
 
             {/* Desktop Layout */}
             <div className="faq-page-desktop">
-
+                <img className="stars Stars" src={Stars} alt = "Stars" />
                 <img className="FAQText" src={FAQText} alt="FAQText" />
+                
 
                 <div className="faq-container">
                     {/* Map over the rows */}
@@ -92,7 +95,7 @@ const FaqPage = () => {
 
             {/* Mobile Layout */}
             <div className="faq-page-mobile">
-
+                <img className="stars Stars" src={MobileStars} alt = "Stars" />
                 <img className="FAQText" src={MobileFAQText} alt="FAQText" />
 
                 <div className="faq-container-mobile">
