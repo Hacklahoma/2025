@@ -130,83 +130,86 @@
     color: #FFFFFF;
   }
   
-    /* MENTORS LAYOUT */
-   .eth-page .mentors {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-top: 1rem;
-   }
-    
-   .eth-page .mentor-card {
+   /* MENTORS LAYOUT */
+.eth-page .mentors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem; /* Increased margin to avoid overlap with heading */
+}
+
+.eth-page .mentor-card {
     flex: 1 1 calc(50% - 2rem); /* Two columns on larger screens */
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
-    padding: 5rem 1rem 1rem; /* Increased top padding for image */
+    padding: 4rem 1rem 1rem; /* Adjusted padding for image space */
     text-align: center;
-    box-shadow: 0 0 10px rgba(98,126,234, 0.1);
+    box-shadow: 0 0 10px rgba(98, 126, 234, 0.1);
     min-width: 250px;
-    min-height: 400px; /* Increased to prevent text shifting */
+    min-height: 420px; /* Ensure consistent card height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    position: relative; /* Ensures text does not overlap */
+    position: relative;
 }
-  
-  .eth-page .mentor-card:hover {
+
+.eth-page .mentor-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(98,126,234, 0.2);
-  }
-  
-  .eth-page .mentor-card img {
+    box-shadow: 0 5px 15px rgba(98, 126, 234, 0.2);
+}
+
+/* Mentor Image - Properly Positioned Inside Card */
+.eth-page .mentor-card img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #627EEA;
     position: absolute;
-    top: -60px; /* Moves image above card */
+    top: 10px; /* Position inside the card */
     left: 50%;
     transform: translateX(-50%);
     background: #1B1B1B;
 }
-  
-  .eth-page .mentor-card img[alt="Anindya Maiti"] {
+
+/* Adjust image positioning for specific mentor if needed */
+.eth-page .mentor-card img[alt="Anindya Maiti"] {
     object-position: center 0%;
-  }
-  
-  .eth-page .mentor-card h3 {
-    margin: 0.5rem 0;
+}
+
+/* Mentor Name */
+.eth-page .mentor-card h3 {
+    margin-top: 6rem; /* Push text below image */
     color: #FFFFFF;
     font-size: 1rem;
-  }
-  
-  /* Force text to wrap properly within the card */
-  .eth-page .mentor-card p {
+}
+
+/* Mentor Title */
+.eth-page .mentor-card h5 {
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Mentor Description - Centered Text */
+.eth-page .mentor-card p {
     font-size: 0.9rem;
     color: #FFFFFF;
-    width: 100%;
-    text-align: left; /* Change to 'center' if you prefer centered text */
-  }
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
+}
 
-  .eth-page .mentor-card h3,
-  .eth-page .mentor-card h5,
-  .eth-page .mentor-card p {
-      margin-top: 1rem;
-      text-align: center;
-      width: 90%;
-  }
-  
-
-  
-  @media (max-width: 600px) {
+/* Responsive Adjustments */
+@media (max-width: 600px) {
     .eth-page .mentor-card {
-      flex: 1 1 100%;
+        flex: 1 1 100%;
+        min-height: auto;
     }
-  }
-  
+}
+
   /* FEATURES (2x2 GRID) */
   .eth-page .features-grid {
     display: grid;
