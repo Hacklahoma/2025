@@ -17,7 +17,6 @@
     flex-direction: column;
   }
   
-  /* Headings */
   h1, h2, h3, h4, h5 {
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
@@ -26,21 +25,21 @@
     margin-bottom: 1rem;
   }
   
-  /* Links */
+  /* LINK STYLES */
   a {
-    color: #F49E4C;
+    color: #F49E4C; /* Accent color for link hover */
     text-decoration: none;
     transition: color 0.3s;
   }
   a:hover {
-    color: #627EEA;
+    color: #627EEA; /* Ethereum Purple on hover */
     text-decoration: underline;
   }
   
   /* HERO SECTION */
   .hero {
     position: relative;
-    background: #627EEA;
+    background: #627EEA; /* Ethereum Purple/Blue */
     color: #FFFFFF;
     padding: 4rem 2rem;
     text-align: center;
@@ -57,7 +56,7 @@
     margin: 0.5rem auto 0 auto;
   }
   
-  /* WAVE BACKGROUND */
+  /* WAVE BACKGROUND IN HERO */
   .hero::before {
     content: "";
     position: absolute;
@@ -71,12 +70,12 @@
     z-index: -1;
   }
   
-  /* Retro Grid Background (Optional) */
+  /* RETRO GRID BACKGROUND (OPTIONAL) OVER BODY */
   body::before {
     content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -2;
+    z-index: -2; /* behind hero wave */
     background:
       radial-gradient(rgba(255,255,255,0.08), transparent 60%) 0 0,
       radial-gradient(rgba(255,255,255,0.08), transparent 60%) 32px 32px;
@@ -88,26 +87,26 @@
   .container {
     width: 70%;
     margin: 2rem auto;
-    background-color: rgba(60, 60, 61, 0.85);
+    background-color: rgba(60, 60, 61, 0.85); /* Slight opacity for layering */
     padding: 2rem 3rem;
-    border: 2px solid #627EEA;
+    border: 2px solid #627EEA; /* Ethereum Purple/Blue border */
     box-shadow: 0 0 20px rgba(98,126,234, 0.2);
     border-radius: 8px;
   }
   
-  /* Section Headers */
+  /* SECTION HEADERS */
   .section-title {
-    color: #F49E4C;
+    color: #F49E4C; /* Orange accent for section headings */
     font-size: 1.8rem;
     margin-top: 2rem;
   }
   
   .subsection-title {
-    color: #F49E4C;
+    color: #F49E4C; /* Orange accent */
     margin-top: 2rem;
   }
   
-  /* CTA Button */
+  /* CTA BUTTON */
   .cta-button {
     display: inline-block;
     margin-top: 1rem;
@@ -126,7 +125,7 @@
     color: #FFFFFF;
   }
   
-  /* Mentors Layout */
+  /* MENTORS LAYOUT */
   .mentors {
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +133,7 @@
     margin-top: 1rem;
   }
   .mentor-card {
-    flex: 1 1 calc(50% - 2rem);
+    flex: 1 1 calc(50% - 2rem); /* Two columns on larger screens */
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
@@ -168,15 +167,13 @@
     font-size: 0.9rem;
     color: #FFFFFF;
   }
-  
-  /* Responsive Mentors */
   @media(max-width: 600px) {
     .mentor-card {
       flex: 1 1 100%;
     }
   }
   
-  /* Features Grid */
+  /* FEATURES (2x2 GRID) */
   .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -184,7 +181,7 @@
     margin: 2rem 0;
   }
   .feature-box {
-    background-color: rgba(244,158,76, 0.1);
+    background-color: rgba(244,158,76, 0.1); /* Light orange overlay */
     border: 1px solid #F49E4C;
     border-radius: 4px;
     padding: 1rem;
@@ -204,15 +201,13 @@
     font-size: 0.9rem;
     margin-bottom: 0;
   }
-  
-  /* Responsive Features Grid */
   @media(max-width: 600px) {
     .features-grid {
       grid-template-columns: 1fr;
     }
   }
   
-  /* Calendar Boxes */
+  /* CALENDAR BOXES */
   .calendar-box {
     display: flex;
     align-items: center;
@@ -254,7 +249,7 @@
     margin-bottom: 0.2rem;
   }
   
-  /* Workshop Header */
+  /* NEW: Workshop Header Container */
   .workshop-header {
     display: flex;
     align-items: center;
@@ -262,13 +257,14 @@
     margin-bottom: 1rem;
   }
   
-  /* Workshops & Mentors Sections */
+  /* WORKSHOP & MENTORS SECTIONS */
   .workshops,
   .mentors-section {
     margin-top: 2rem;
   }
   .workshop {
     margin-bottom: 2rem;
+    
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
@@ -283,7 +279,7 @@
     box-shadow: 0 0 12px rgba(244,158,76, 0.4);
   }
   
-  /* Footer */
+  /* FOOTER */
   footer {
     text-align: center;
     margin: 2rem 0;

@@ -3,6 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
+import Navigation from './components/Navigation'; 
 import LandingPage from './components/LandingPage';
 import RatBreak from './components/RatBreak';
 import AboutPage from './components/AboutPage';
@@ -12,21 +13,24 @@ import BuildOnEthereum from './components/BuildOnEthereum';
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <div className="App">
-            <LandingPage />
-            <RatBreak />
-            <AboutPage />
-            <FaqPage />
-            <SponsorPage />
-          </div>
-        }
-      />
-      <Route path="/builtonethereum" element={<BuildOnEthereum />} />
-    </Routes>
+    <>
+      <Navigation />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="App">
+              <LandingPage />
+              <RatBreak />
+              <AboutPage />
+              <FaqPage />
+              <SponsorPage />
+            </div>
+          }
+        />
+        <Route path="/builtonethereum" element={<BuildOnEthereum />} />
+      </Routes>
+    </>
   );
 }
 

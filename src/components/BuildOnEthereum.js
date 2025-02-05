@@ -1,11 +1,22 @@
+// src/components/BuildOnEthereum.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './BuildOnEthereum.css'; 
 import DrMaiti from '../assets/anindya.jpg';
 import Scott from '../assets/scott.jpg';
 
 function BuildOnEthereum() {
+  const navigate = useNavigate();
+
   return (
     <div>
+      {/* Optional Back Button */}
+      <div style={{ padding: '1rem' }}>
+        <button onClick={() => navigate(-1)} className="cta-button">
+          ← Back
+        </button>
+      </div>
+
       {/* HERO SECTION */}
       <section className="hero">
         <h1>Build on Ethereum</h1>
@@ -136,7 +147,7 @@ function BuildOnEthereum() {
           </p>
           <div className="mentors">
             <div className="mentor-card">
-              <img src= {Scott} alt="Scott Seidenberger" />
+              <img src={Scott} alt="Scott Seidenberger" />
               <h3>Scott Seidenberger</h3>
               <h5>PhD Candidate, DSA</h5>
               <p>
@@ -146,7 +157,7 @@ function BuildOnEthereum() {
               </p>
             </div>
             <div className="mentor-card">
-              <img src= {DrMaiti} alt="Anindya Maiti" />
+              <img src={DrMaiti} alt="Anindya Maiti" />
               <h3>Dr. Anindya Maiti</h3>
               <h5>Asst. Prof., CS</h5>
               <p>
