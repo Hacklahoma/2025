@@ -147,6 +147,7 @@
     box-shadow: 0 0 10px rgba(98,126,234, 0.1);
     min-width: 250px;
     transition: transform 0.3s;
+    overflow: hidden; /* Ensure content stays inside */
   }
   .eth-page .mentor-card:hover {
     transform: translateY(-3px);
@@ -155,8 +156,8 @@
   .eth-page .mentor-card img {
     display: block;
     margin: 0 auto 1rem;
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Reduced from 120px */
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #627EEA;
@@ -290,10 +291,5 @@
     margin: 2rem 0;
     color: #8C8C8C;
     font-size: 0.8rem;
-  }
-  
-  /* Optional Back Button Container */
-  .eth-page__back {
-    padding: 1rem;
   }
   

@@ -1,22 +1,12 @@
 // src/components/BuildOnEthereum.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './BuildOnEthereum.css';
 import DrMaiti from '../assets/anindya.jpg';
 import Scott from '../assets/scott.jpg';
 
 function BuildOnEthereum() {
-  const navigate = useNavigate();
-
   return (
     <div className="eth-page">
-      {/* Optional Back Button */}
-      <div className="eth-page__back">
-        <button onClick={() => navigate(-1)} className="cta-button">
-          ← Back
-        </button>
-      </div>
-
       {/* HERO SECTION */}
       <section className="hero">
         <h1>Build on Ethereum</h1>
