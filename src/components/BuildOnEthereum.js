@@ -134,7 +134,7 @@ function BuildOnEthereum() {
           </p>
           <div className="mentors">
             <div className="mentor-card">
-              <img src="scott.jpg" alt="Scott Seidenberger" />
+              <img src="../assets/scott.jpg" alt="Scott Seidenberger" />
               <h3>Scott Seidenberger</h3>
               <h5>PhD Candidate, DSA</h5>
               <p>
@@ -144,7 +144,7 @@ function BuildOnEthereum() {
               </p>
             </div>
             <div className="mentor-card">
-              <img src="anindya.jpg" alt="Anindya Maiti" />
+              <img src="../assets/anindya.jpg" alt="Anindya Maiti" />
               <h3>Dr. Anindya Maiti</h3>
               <h5>Asst. Prof., CS</h5>
               <p>
