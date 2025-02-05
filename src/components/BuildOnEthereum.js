@@ -1,5 +1,7 @@
 import React from 'react';
-import './BuildOnEthereum.css'; // Import the CSS styles
+import './BuildOnEthereum.css'; 
+import DrMaiti from '../assets/anindya.jpg';
+import Scott from '../assets/scott.jpg';
 
 function BuildOnEthereum() {
   return (
@@ -134,7 +136,7 @@ function BuildOnEthereum() {
           </p>
           <div className="mentors">
             <div className="mentor-card">
-              <img src="../assets/scott.jpg" alt="Scott Seidenberger" />
+              <img src= {Scott} alt="Scott Seidenberger" />
               <h3>Scott Seidenberger</h3>
               <h5>PhD Candidate, DSA</h5>
               <p>
@@ -144,7 +146,7 @@ function BuildOnEthereum() {
               </p>
             </div>
             <div className="mentor-card">
-              <img src="../assets/anindya.jpg" alt="Anindya Maiti" />
+              <img src= {DrMaiti} alt="Anindya Maiti" />
               <h3>Dr. Anindya Maiti</h3>
               <h5>Asst. Prof., CS</h5>
               <p>
