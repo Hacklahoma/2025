@@ -1,7 +1,7 @@
 // src/components/BuildOnEthereum.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './BuildOnEthereum.css'; 
+import './BuildOnEthereum.css';
 import DrMaiti from '../assets/anindya.jpg';
 import Scott from '../assets/scott.jpg';
 
@@ -9,9 +9,9 @@ function BuildOnEthereum() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="eth-page">
       {/* Optional Back Button */}
-      <div style={{ padding: '1rem' }}>
+      <div className="eth-page__back">
         <button onClick={() => navigate(-1)} className="cta-button">
           ← Back
         </button>
@@ -22,8 +22,7 @@ function BuildOnEthereum() {
         <h1>Build on Ethereum</h1>
         <h2>at Hacklahoma 2025</h2>
         <p>
-          Dive into the world of Web3 at Oklahoma’s largest hackathon!
-          <br />
+          Dive into the world of Web3 at Oklahoma’s largest hackathon!<br />
           Win <strong>$1,000</strong> sponsored by the Ethereum Foundation’s Ecosystem Support Program.
         </p>
       </section>
@@ -111,7 +110,7 @@ function BuildOnEthereum() {
             </div>
             <p>
               Led by Scott Seidenberger, this is a pre-Hacklahoma workshop designed to give you an introduction to web3 and the problems
-              that it solves. We will get hands on with some demos, create our first wallets, and even get a Proof-of-Attendance (PoA) NFT! 
+              that it solves. We will get hands on with some demos, create our first wallets, and even get a Proof-of-Attendance (PoA) NFT!
             </p>
           </div>
 
@@ -132,7 +131,7 @@ function BuildOnEthereum() {
               <h3>Workshop 2: Building on Ethereum</h3>
             </div>
             <p>
-              Led by the founder of <strong>BuidlGuidl</strong>, this session covers the fundamentals of dApp development on Ethereum and how to deploy 
+              Led by the founder of <strong>BuidlGuidl</strong>, this session covers the fundamentals of dApp development on Ethereum and how to deploy
               your first smart contract. Held during the Hacklahoma event, there is no better expert to help you understand how to get started with developing on Ethereum.
             </p>
           </div>
@@ -172,11 +171,8 @@ function BuildOnEthereum() {
         {/* CALL TO ACTION */}
         <br />
         <p>
-          Ready to <em>supercharge</em> your hackathon project?
-          <br />
-          <a href="https://discord.gg/4rMdUbBuA2" className="cta-button">
-            Join us on Discord
-          </a>
+          Ready to <em>supercharge</em> your hackathon project?<br />
+          <a href="https://discord.gg/4rMdUbBuA2" className="cta-button">Join us on Discord</a>
         </p>
       </div>
 

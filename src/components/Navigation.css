@@ -1,7 +1,10 @@
-/* src/components/Navigation.css */
+/* Navigation.css */
 .main-nav {
-    background-color: #333;
+    background-color: rgba(27, 27, 27, 0.85); /* A dark, semi-transparent background */
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
   }
   
   .main-nav ul {
@@ -16,13 +19,12 @@
   }
   
   .main-nav ul li a {
-    color: #fff;
+    color: #F49E4C; 
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
   }
   
   .main-nav ul li a:hover {
-    color: #f49e4c;  /* Accent color on hover */
+    color: #627EEA;
   }
-  

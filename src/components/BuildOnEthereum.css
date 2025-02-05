@@ -1,13 +1,13 @@
 /* BuildOnEthereum.css */
 
-/* RESET / BASE STYLES */
-* {
+/* Scope all styles to the .eth-page container */
+.eth-page * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  body {
+  .eth-page {
     font-family: 'Montserrat', sans-serif;
     background: #1B1B1B;
     color: #FFFFFF;
@@ -15,9 +15,15 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   
-  h1, h2, h3, h4, h5 {
+  /* Headings */
+  .eth-page h1,
+  .eth-page h2,
+  .eth-page h3,
+  .eth-page h4,
+  .eth-page h5 {
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -25,39 +31,39 @@
     margin-bottom: 1rem;
   }
   
-  /* LINK STYLES */
-  a {
-    color: #F49E4C; /* Accent color for link hover */
+  /* Link Styles */
+  .eth-page a {
+    color: #F49E4C;
     text-decoration: none;
     transition: color 0.3s;
   }
-  a:hover {
-    color: #627EEA; /* Ethereum Purple on hover */
+  .eth-page a:hover {
+    color: #627EEA;
     text-decoration: underline;
   }
   
   /* HERO SECTION */
-  .hero {
+  .eth-page .hero {
     position: relative;
-    background: #627EEA; /* Ethereum Purple/Blue */
+    background: #627EEA;
     color: #FFFFFF;
     padding: 4rem 2rem;
     text-align: center;
     overflow: hidden;
     z-index: 1;
   }
-  .hero h1 {
+  .eth-page .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
-  .hero p {
+  .eth-page .hero p {
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0.5rem auto 0 auto;
   }
   
   /* WAVE BACKGROUND IN HERO */
-  .hero::before {
+  .eth-page .hero::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,12 +76,12 @@
     z-index: -1;
   }
   
-  /* RETRO GRID BACKGROUND (OPTIONAL) OVER BODY */
-  body::before {
+  /* RETRO GRID BACKGROUND (Optional) Over the Container */
+  .eth-page::before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -2; /* behind hero wave */
+    z-index: -2;
     background:
       radial-gradient(rgba(255,255,255,0.08), transparent 60%) 0 0,
       radial-gradient(rgba(255,255,255,0.08), transparent 60%) 32px 32px;
@@ -84,30 +90,29 @@
   }
   
   /* MAIN CONTENT WRAPPER */
-  .container {
+  .eth-page .container {
     width: 70%;
     margin: 2rem auto;
-    background-color: rgba(60, 60, 61, 0.85); /* Slight opacity for layering */
+    background-color: rgba(60, 60, 61, 0.85);
     padding: 2rem 3rem;
-    border: 2px solid #627EEA; /* Ethereum Purple/Blue border */
+    border: 2px solid #627EEA;
     box-shadow: 0 0 20px rgba(98,126,234, 0.2);
     border-radius: 8px;
   }
   
-  /* SECTION HEADERS */
-  .section-title {
-    color: #F49E4C; /* Orange accent for section headings */
+  /* Section Headers */
+  .eth-page .section-title {
+    color: #F49E4C;
     font-size: 1.8rem;
     margin-top: 2rem;
   }
-  
-  .subsection-title {
-    color: #F49E4C; /* Orange accent */
+  .eth-page .subsection-title {
+    color: #F49E4C;
     margin-top: 2rem;
   }
   
   /* CTA BUTTON */
-  .cta-button {
+  .eth-page .cta-button {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
@@ -120,20 +125,20 @@
     text-transform: uppercase;
     transition: background-color 0.3s, color 0.3s;
   }
-  .cta-button:hover {
+  .eth-page .cta-button:hover {
     background-color: #F49E4C;
     color: #FFFFFF;
   }
   
   /* MENTORS LAYOUT */
-  .mentors {
+  .eth-page .mentors {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1rem;
   }
-  .mentor-card {
-    flex: 1 1 calc(50% - 2rem); /* Two columns on larger screens */
+  .eth-page .mentor-card {
+    flex: 1 1 calc(50% - 2rem);
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
@@ -143,77 +148,78 @@
     min-width: 250px;
     transition: transform 0.3s;
   }
-  .mentor-card:hover {
+  .eth-page .mentor-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(98,126,234, 0.2);
   }
-  .mentor-card img {
+  .eth-page .mentor-card img {
+    display: block;
+    margin: 0 auto 1rem;
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1rem;
     border: 2px solid #627EEA;
   }
-  .mentor-card img[alt="Anindya Maiti"] {
+  .eth-page .mentor-card img[alt="Anindya Maiti"] {
     object-position: center 0%;
   }
-  .mentor-card h3 {
+  .eth-page .mentor-card h3 {
     margin: 0.5rem 0;
     color: #FFFFFF;
     font-size: 1rem;
   }
-  .mentor-card p {
+  .eth-page .mentor-card p {
     font-size: 0.9rem;
     color: #FFFFFF;
   }
   @media(max-width: 600px) {
-    .mentor-card {
+    .eth-page .mentor-card {
       flex: 1 1 100%;
     }
   }
   
   /* FEATURES (2x2 GRID) */
-  .features-grid {
+  .eth-page .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2rem 0;
   }
-  .feature-box {
-    background-color: rgba(244,158,76, 0.1); /* Light orange overlay */
+  .eth-page .feature-box {
+    background-color: rgba(244,158,76, 0.1);
     border: 1px solid #F49E4C;
     border-radius: 4px;
     padding: 1rem;
     box-shadow: 0 0 8px rgba(244,158,76, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  .feature-box:hover {
+  .eth-page .feature-box:hover {
     transform: scale(1.02);
     box-shadow: 0 0 12px rgba(244,158,76, 0.4);
   }
-  .feature-box h3 {
+  .eth-page .feature-box h3 {
     margin-bottom: 0.5rem;
     color: #F49E4C;
     font-size: 1rem;
   }
-  .feature-box p {
+  .eth-page .feature-box p {
     font-size: 0.9rem;
     margin-bottom: 0;
   }
   @media(max-width: 600px) {
-    .features-grid {
+    .eth-page .features-grid {
       grid-template-columns: 1fr;
     }
   }
   
   /* CALENDAR BOXES */
-  .calendar-box {
+  .eth-page .calendar-box {
     display: flex;
     align-items: center;
     margin-right: 1rem;
   }
-  .calendar-date {
+  .eth-page .calendar-date {
     background-color: #F49E4C;
     color: #3C3C3D;
     width: 60px;
@@ -226,31 +232,31 @@
     margin-right: 1rem;
     box-shadow: 0 0 6px rgba(244,158,76, 0.4);
   }
-  .calendar-day {
+  .eth-page .calendar-day {
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1;
   }
-  .calendar-month {
+  .eth-page .calendar-month {
     font-size: 0.8rem;
     text-transform: uppercase;
     line-height: 1;
   }
-  .calendar-details {
+  .eth-page .calendar-details {
     font-size: 0.95rem;
   }
-  .calendar-details .calendar-weekday {
+  .eth-page .calendar-details .calendar-weekday {
     font-weight: bold;
     margin-bottom: 0.2rem;
   }
-  .calendar-details .calendar-time,
-  .calendar-details .calendar-location {
+  .eth-page .calendar-details .calendar-time,
+  .eth-page .calendar-details .calendar-location {
     opacity: 0.9;
     margin-bottom: 0.2rem;
   }
   
-  /* NEW: Workshop Header Container */
-  .workshop-header {
+  /* WORKSHOP HEADER CONTAINER */
+  .eth-page .workshop-header {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -258,13 +264,12 @@
   }
   
   /* WORKSHOP & MENTORS SECTIONS */
-  .workshops,
-  .mentors-section {
+  .eth-page .workshops,
+  .eth-page .mentors-section {
     margin-top: 2rem;
   }
-  .workshop {
+  .eth-page .workshop {
     margin-bottom: 2rem;
-    
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
@@ -274,16 +279,21 @@
     min-width: 250px;
     transition: transform 0.3s;
   }
-  .workshop:hover {
+  .eth-page .workshop:hover {
     transform: scale(1.02);
     box-shadow: 0 0 12px rgba(244,158,76, 0.4);
   }
   
   /* FOOTER */
-  footer {
+  .eth-page footer {
     text-align: center;
     margin: 2rem 0;
     color: #8C8C8C;
     font-size: 0.8rem;
+  }
+  
+  /* Optional Back Button Container */
+  .eth-page__back {
+    padding: 1rem;
   }
   
