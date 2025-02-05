@@ -138,22 +138,22 @@
         margin-top: 1rem;
    }
     
-  .eth-page .mentor-card {
+   .eth-page .mentor-card {
     flex: 1 1 calc(50% - 2rem); /* Two columns on larger screens */
     background-color: rgba(60, 60, 61, 0.6);
     border: 1px solid #627EEA;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem; /* Increased top padding */
     text-align: center;
     box-shadow: 0 0 10px rgba(98,126,234, 0.1);
     min-width: 250px;
-    transition: transform 0.3s;
-    overflow: hidden; /* Ensure content stays inside */
-    /* Added flex properties to stack content vertically */
+    min-height: 350px; /* Prevents overlapping */
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    justify-content: flex-start;
+    position: relative; /* Ensures text does not overlap */
+}
   
   .eth-page .mentor-card:hover {
     transform: translateY(-3px);
@@ -161,14 +161,18 @@
   }
   
   .eth-page .mentor-card img {
-    display: block;
-    margin: 0 auto 1rem;
-    width: 100px; /* Reduced from 120px */
-    height: 100px;
+    width: 120px; /* Ensure images are properly sized */
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #627EEA;
-  }
+    border: 3px solid #627EEA;
+    margin-top: -60px; /* Moves image slightly up */
+    background: #1B1B1B; /* Prevents blending issues */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
   
   .eth-page .mentor-card img[alt="Anindya Maiti"] {
     object-position: center 0%;
@@ -187,6 +191,15 @@
     width: 100%;
     text-align: left; /* Change to 'center' if you prefer centered text */
   }
+
+.eth-page .mentor-card h3,
+.eth-page .mentor-card h5,
+.eth-page .mentor-card p {
+    margin-top: 1rem;
+    text-align: center;
+    width: 90%;
+}
+
   
   @media (max-width: 600px) {
     .eth-page .mentor-card {
