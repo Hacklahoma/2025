@@ -19,6 +19,7 @@ import Boeing from '../assets/Sponsors/Boeing.png';
 import CocaCola from '../assets/Sponsors/CocaCola.png';
 import Koch from '../assets/Sponsors/Koch.png';
 import StandOutStickers from '../assets/Sponsors/StandOutStickers.png';
+import Ether from '../assets/Sponsors/Ethereum.png'
 
 const SponsorPage = () => {
 
@@ -62,6 +63,9 @@ const SponsorPage = () => {
                         </a>
                         <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
                             <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "5", gridRow: "2" }} />
+                        </a>
+                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer">
+                            <img src={Ether} alt="Ethereum Foundation" style={{ gridColumn: "6", gridRow: "1" }} />
                         </a>
                     </div>
                 </div>

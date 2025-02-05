@@ -8,12 +8,14 @@ import BodyText from '../assets/S2_BodyText.png';
 
 import ComicBook from '../assets/S2_ComicBook.png';
 
+
 //Mobile Assets
 import MobileTitleText from '../assets/MS2_TitleText.png';
 import MobileTitleHighlight from '../assets/MS2_TitleHighlight.png';
 import MobileBodyText from '../assets/MS2_BodyText.png';
 
 import MobileComicBook from '../assets/MS2_ComicBook.png';
+
 
 // Import images for the carousel
 import Image1 from '../assets/images/DSC_0245.jpg';
@@ -41,9 +43,10 @@ const AboutPage = () => {
             <img className="TitleText" src={TitleText} alt="TitleText" />
             <img className="BodyText" src={BodyText} alt="BodyText" />
             <img className="ComicBook" src={ComicBook} alt="ComicBook" />
-
+        
             {/* Carousel */}
-            <section className="image-carousel">
+            <section className="image-carousel"
+            >
                 <div className="carousel">
                     <div className="slide-track">
                         {imageList.concat(imageList).map((image, index) => (
@@ -62,7 +65,8 @@ const AboutPage = () => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="about-page-mobile">
+        <div className="about-page-mobile"
+        >
 
             <img className="TitleHighlight" src={MobileTitleHighlight} alt="TitleHighlight" />
             <img className="TitleText" src={MobileTitleText} alt="TitleText" />
