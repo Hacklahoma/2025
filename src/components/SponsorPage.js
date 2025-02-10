@@ -107,8 +107,11 @@ const SponsorPage = () => {
                         <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer">
                             <img src={Koch} alt="Koch" style={{ gridColumn: "1", gridRow: "5" }} />
                         </a>
+                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer">
+                            <img src={Ether} alt="Ethereum Foundation" style={{ gridColumn: "2", gridRow: "5" }} />
+                        </a>
                         <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
-                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "2", gridRow: "5" }} />
+                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "1", gridRow: "6" }} />
                         </a>
                     </div>
                 </div>

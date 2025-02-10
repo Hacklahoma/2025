@@ -73,7 +73,7 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
 
-    gap: 5%;
+    gap: 2%;
     /* Space between images */
     height: 100%;
     width: 90%;
