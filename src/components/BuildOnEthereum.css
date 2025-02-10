@@ -1,0 +1,325 @@
+/* BuildOnEthereum.css */
+
+/* Scope all styles to the .eth-page container */
+.eth-page * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .eth-page {
+    font-family: 'Montserrat', sans-serif;
+    background: #1B1B1B;
+    color: #FFFFFF;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Headings */
+  .eth-page h1,
+  .eth-page h2,
+  .eth-page h3,
+  .eth-page h4,
+  .eth-page h5 {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+  }
+  
+  /* Link Styles */
+  .eth-page a {
+    color: #F49E4C;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .eth-page a:hover {
+    color: #627EEA;
+    text-decoration: underline;
+  }
+  
+  /* HERO SECTION */
+  .eth-page .hero {
+    position: relative;
+    background: #627EEA;
+    color: #FFFFFF;
+    padding: 4rem 2rem;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .eth-page .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .eth-page .hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0.5rem auto 0 auto;
+  }
+  
+  /* WAVE BACKGROUND IN HERO */
+  .eth-page .hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFF" fill-opacity="0.2" d="M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,74.7C672,43,768,53,864,74.7C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat;
+    background-size: cover;
+    transform: translateY(50%);
+    z-index: -1;
+  }
+  
+  /* RETRO GRID BACKGROUND (Optional) Over the Container */
+  .eth-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -2;
+    background:
+      radial-gradient(rgba(255,255,255,0.08), transparent 60%) 0 0,
+      radial-gradient(rgba(255,255,255,0.08), transparent 60%) 32px 32px;
+    background-size: 64px 64px;
+    opacity: 0.3;
+  }
+  
+  /* MAIN CONTENT WRAPPER */
+  .eth-page .container {
+    width: 70%;
+    margin: 2rem auto;
+    background-color: rgba(60, 60, 61, 0.85);
+    padding: 2rem 3rem;
+    border: 2px solid #627EEA;
+    box-shadow: 0 0 20px rgba(98,126,234, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Section Headers */
+  .eth-page .section-title {
+    color: #F49E4C;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  .eth-page .subsection-title {
+    color: #F49E4C;
+    margin-top: 2rem;
+  }
+  
+  /* CTA BUTTON */
+  .eth-page .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #3C3C3D;
+    background-color: #627EEA;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .eth-page .cta-button:hover {
+    background-color: #F49E4C;
+    color: #FFFFFF;
+  }
+  
+   /* MENTORS LAYOUT */
+.eth-page .mentors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem; /* Increased margin to avoid overlap with heading */
+}
+
+.eth-page .mentor-card {
+    flex: 1 1 calc(50% - 2rem); /* Two columns on larger screens */
+    background-color: rgba(60, 60, 61, 0.6);
+    border: 1px solid #627EEA;
+    border-radius: 8px;
+    padding: 4rem 1rem 1rem; /* Adjusted padding for image space */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(98, 126, 234, 0.1);
+    min-width: 250px;
+    min-height: 420px; /* Ensure consistent card height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.eth-page .mentor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(98, 126, 234, 0.2);
+}
+
+/* Mentor Image - Properly Positioned Inside Card */
+.eth-page .mentor-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #627EEA;
+    position: absolute;
+    top: 10px; /* Position inside the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1B1B1B;
+}
+
+/* Adjust image positioning for specific mentor if needed */
+.eth-page .mentor-card img[alt="Anindya Maiti"] {
+    object-position: center 0%;
+}
+
+/* Mentor Name */
+.eth-page .mentor-card h3 {
+    margin-top: 6rem; /* Push text below image */
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+/* Mentor Title */
+.eth-page .mentor-card h5 {
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Mentor Description - Centered Text */
+.eth-page .mentor-card p {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .eth-page .mentor-card {
+        flex: 1 1 100%;
+        min-height: auto;
+    }
+}
+
+  /* FEATURES (2x2 GRID) */
+  .eth-page .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .eth-page .feature-box {
+    background-color: rgba(244,158,76, 0.1);
+    border: 1px solid #F49E4C;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(244,158,76, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .eth-page .feature-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(244,158,76, 0.4);
+  }
+  .eth-page .feature-box h3 {
+    margin-bottom: 0.5rem;
+    color: #F49E4C;
+    font-size: 1rem;
+  }
+  .eth-page .feature-box p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  @media(max-width: 600px) {
+    .eth-page .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* CALENDAR BOXES */
+  .eth-page .calendar-box {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .eth-page .calendar-date {
+    background-color: #F49E4C;
+    color: #3C3C3D;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    box-shadow: 0 0 6px rgba(244,158,76, 0.4);
+  }
+  .eth-page .calendar-day {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .eth-page .calendar-month {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .eth-page .calendar-details {
+    font-size: 0.95rem;
+  }
+  .eth-page .calendar-details .calendar-weekday {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  .eth-page .calendar-details .calendar-time,
+  .eth-page .calendar-details .calendar-location {
+    opacity: 0.9;
+    margin-bottom: 0.2rem;
+  }
+  
+  /* WORKSHOP HEADER CONTAINER */
+  .eth-page .workshop-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* WORKSHOP & MENTORS SECTIONS */
+  .eth-page .workshops,
+  .eth-page .mentors-section {
+    margin-top: 2rem;
+  }
+  .eth-page .workshop {
+    margin-bottom: 2rem;
+    background-color: rgba(60, 60, 61, 0.6);
+    border: 1px solid #627EEA;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(98,126,234, 0.1);
+    min-width: 250px;
+    transition: transform 0.3s;
+  }
+  .eth-page .workshop:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(244,158,76, 0.4);
+  }
+  
+  /* FOOTER */
+  .eth-page footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: #8C8C8C;
+    font-size: 0.8rem;
+  }
+  
