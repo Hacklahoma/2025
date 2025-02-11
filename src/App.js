@@ -8,7 +8,9 @@ import LandingPage from './components/LandingPage';
 import RatBreak from './components/RatBreak';
 import AboutPage from './components/AboutPage';
 import FaqPage from './components/FaqPage';
+import Youtube from './components/Youtube';
 import SponsorPage from './components/SponsorPage';
+
 import BuildOnEthereum from './components/BuildOnEthereum'; 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
               <RatBreak />
               <AboutPage />
               <FaqPage />
+              <Youtube />
               <SponsorPage />
             </div>
           }
