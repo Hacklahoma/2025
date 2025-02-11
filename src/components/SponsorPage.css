@@ -58,27 +58,34 @@
     display: grid;
 
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
 
-    gap: 5%;
     /* Space between images */
-    height: 60%;
-    width: 90%;
+    gap: 5%;
+
+    /* Adjusts vertical positioning of the grid */
+    height: 75%;
+
     /* Ensure the grid spans the full width of the container */
+    width: 90%;
 }
 
 .logo-grid-mobile {
     display: grid;
 
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
 
-    gap: 2%;
     /* Space between images */
+    gap: 5%;
+
+    /* Adjusts vertical positioning of the grid */
     height: 100%;
-    width: 90%;
+
     /* Ensure the grid spans the full width of the container */
-    margin-bottom: 200px;
+    width: 95%;
+
+    margin-bottom: 0px;
 }
 
 .logo-grid-desktop a {

@@ -20,6 +20,7 @@ import CocaCola from '../assets/Sponsors/CocaCola.png';
 import Koch from '../assets/Sponsors/Koch.png';
 import StandOutStickers from '../assets/Sponsors/StandOutStickers.png';
 import Ether from '../assets/Sponsors/Ethereum.png'
+import GCOE from '../assets/Sponsors/GCOE.png'
 
 const SponsorPage = () => {
 
@@ -34,39 +35,55 @@ const SponsorPage = () => {
 
                 <div className="logo-grid-container">
                     <div className="logo-grid-desktop">
-                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer">
-                            <img src={HomeCreations} alt="Home Creations" style={{ gridColumn: "1", gridRow: "1" }} />
+                        
+                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "1" }}>
+                            <img src={Ether} alt="Ethereum Foundation"  />
                         </a>
-                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Paycom} alt="Paycom" style={{ gridColumn: "2", gridRow: "1" }} />
+
+                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "1" }}>
+                            <img src={BakerHughes} alt="Baker Hughes"  />
                         </a>
-                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Google} alt="Google" style={{ gridColumn: "3", gridRow: "1" }} />
+
+                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "1" }}>
+                            <img src={Boeing} alt="Boeing"  />
                         </a>
-                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer">
-                            <img src={BakerHughes} alt="Baker Hughes" style={{ gridColumn: "4", gridRow: "1" }} />
+
+                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "4", gridRow: "1" }}>
+                            <img src={Paycom} alt="Paycom"  />
                         </a>
-                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Devon} alt="Devon" style={{ gridColumn: "1", gridRow: "2" }} />
+
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "5", gridRow: "1" }}>
+                            <img src={Google} alt="Google"  />
                         </a>
-                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Williams} alt="Williams" style={{ gridColumn: "2", gridRow: "2" }} />
+
+                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "2" }}>
+                            <img src={Devon} alt="Devon"  />
                         </a>
-                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Boeing} alt="Boeing" style={{ gridColumn: "3", gridRow: "2" }} />
+
+                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "2" }}>
+                            <img src={Williams} alt="Williams"  />
                         </a>
-                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
-                            <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "4", gridRow: "2" }} />
+
+                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "2" }}>
+                            <img src={CocaCola} alt="Coca Cola"  />
                         </a>
-                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={Koch} alt="Koch" style={{ gridColumn: "5", gridRow: "1" }} />
+
+                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "4", gridRow: "2" }}>
+                            <img src={Koch} alt="Koch"  />
                         </a>
-                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
-                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "5", gridRow: "2" }} />
+
+                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "5", gridRow: "2" }}>
+                            <img src={HomeCreations} alt="Home Creations"  />
                         </a>
-                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer">
-                            <img src={Ether} alt="Ethereum Foundation" style={{ gridColumn: "6", gridRow: "1" }} />
+
+                        <a href="https://www.ou.edu/coe" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1/5", gridRow: "3" }}>
+                            <img src={GCOE} alt="Gallogly College of Engineering"  />
                         </a>
+
+                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "5", gridRow: "3" }}>
+                            <img src={StandOutStickers} alt="Stand Out Stickers"  />
+                        </a>
+
                     </div>
                 </div>
 
@@ -80,39 +97,55 @@ const SponsorPage = () => {
 
                 <div className="logo-grid-container">
                     <div className="logo-grid-mobile">
-                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer">
-                            <img src={HomeCreations} alt="Home Creations" style={{ gridColumn: "1", gridRow: "1" }} />
+
+                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "1" }}>
+                            <img src={Ether} alt="Ethereum Foundation"  />
                         </a>
-                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Paycom} alt="Paycom" style={{ gridColumn: "2", gridRow: "1" }} />
+
+                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "1" }}>
+                            <img src={Boeing} alt="Boeing"  />
                         </a>
-                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Google} alt="Google" style={{ gridColumn: "1", gridRow: "2" }} />
+
+                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "1" }}>
+                            <img src={BakerHughes} alt="Baker Hughes"  />
                         </a>
-                        <a href="https://www.bakerhughes.com" target="_blank" rel="noopener noreferrer">
-                            <img src={BakerHughes} alt="Baker Hughes" style={{ gridColumn: "2", gridRow: "2" }} />
+
+                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "2" }}>
+                            <img src={CocaCola} alt="Coca Cola"  />
                         </a>
-                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Devon} alt="Devon" style={{ gridColumn: "1", gridRow: "3" }} />
+
+                        <a href="https://www.paycom.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "2" }}>
+                            <img src={Paycom} alt="Paycom"  />
                         </a>
-                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Williams} alt="Williams" style={{ gridColumn: "2", gridRow: "3" }} />
+
+                        <a href="https://www.devonenergy.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "2" }}>
+                            <img src={Devon} alt="Devon"  />
                         </a>
-                        <a href="https://www.boeing.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Boeing} alt="Boeing" style={{ gridColumn: "1", gridRow: "4" }} />
+
+                        <a href="https://www.williams.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "3" }}>
+                            <img src={Williams} alt="Williams"  />
                         </a>
-                        <a href="https://www.coca-cola.com" target="_blank" rel="noopener noreferrer">
-                            <img src={CocaCola} alt="Coca Cola" style={{ gridColumn: "2", gridRow: "4" }} />
+
+                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "3" }}>
+                            <img src={Koch} alt="Koch"  />
                         </a>
-                        <a href="https://www.kochinc.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={Koch} alt="Koch" style={{ gridColumn: "1", gridRow: "5" }} />
+
+                        <a href="https://www.homecreations.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "3" }}>
+                            <img src={HomeCreations} alt="Home Creations"  />
                         </a>
-                        <a href="https://esp.ethereum.foundation/" target="_blank" rel="noopener noreferrer">
-                            <img src={Ether} alt="Ethereum Foundation" style={{ gridColumn: "2", gridRow: "5" }} />
+
+                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "1", gridRow: "4" }}>
+                            <img src={Google} alt="Google"  />
                         </a>
-                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer">
-                            <img src={StandOutStickers} alt="Stand Out Stickers" style={{ gridColumn: "1", gridRow: "6" }} />
+
+                        <a href="https://www.ou.edu/coe" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "2", gridRow: "4" }}>
+                            <img src={GCOE} alt="Gallogly College of Engineering"  />
                         </a>
+
+                        <a href="https://hackp.ac/mlh-StandOutStickers-hackathons" target="_blank" rel="noopener noreferrer" style={{ gridColumn: "3", gridRow: "4" }}>
+                            <img src={StandOutStickers} alt="Stand Out Stickers"  />
+                        </a>
+
                     </div>
                 </div>
 
