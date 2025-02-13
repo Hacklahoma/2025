@@ -1,6 +1,6 @@
 /* Navigation.css */
 .main-nav {
-    background-color: rgba(27, 27, 27, 0.85); /* A dark, semi-transparent background */
+    background-color: pink;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -10,6 +10,9 @@
   .main-nav ul {
     list-style: none;
     display: flex;
+    justify-content: center; /* Ensures list items are centered */
+    align-items: center;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -19,7 +22,7 @@
   }
   
   .main-nav ul li a {
-    color: #F49E4C; 
+    color: purple; 
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
