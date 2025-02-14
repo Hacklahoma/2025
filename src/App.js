@@ -11,13 +11,18 @@ import FaqPage from './components/FaqPage';
 import Youtube from './components/Youtube';
 import SponsorPage from './components/SponsorPage';
 
+import LivePage from './components/LivePage';
+
 import BuildOnEthereum from './components/BuildOnEthereum'; 
 
 function App() {
   return (
     <>
+
       <Navigation />
+
       <Routes>
+
         <Route
           path="/"
           element={
@@ -31,8 +36,13 @@ function App() {
             </div>
           }
         />
+
+        <Route path="/live" element={<LivePage />} />
+
         <Route path="/builtonethereum" element={<BuildOnEthereum />} />
+
       </Routes>
+
     </>
   );
 }

@@ -11,6 +11,9 @@ function Navigation() {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/live">Live</Link>
+        </li>
+        <li>
           <Link to="/builtonethereum">Build on Ethereum</Link>
         </li>
       </ul>
