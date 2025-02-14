@@ -1,6 +1,6 @@
 /* Import the Comic Neue font */
 /*@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* General container for both desktop and mobile */
 .faq-page {
@@ -158,7 +158,8 @@
     font-size: min(3cqh, 1.5cqmax); /* Responsive text size */
     transition: transform 0.2s, box-shadow 0.2s; /* Hover effects */
     cursor: pointer;
-    font-family: 'Bangers', cursive; /* Apply comic font */
+    font-family: 'Nunito', serif; /* Apply comic font */
+    font-weight: 800;
 }
 
 /* Hover effect for each faq-section */
@@ -195,20 +196,21 @@
 
 /* Styles for each faq-section */
 .faq-section-mobile {
-  width: 48%; /* Leave space between buttons */
-  border: 0.4vh solid black; /* Thin outline */
-  border-radius: 1.5vh; /* Curved corners */
-  box-sizing: border-box;
-  box-shadow: 0.5vh 0.5vh 0.5vh rgba(0,0,0,0.3); /* Slight drop shadow */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Center text within each button */
-  padding: 2%; /* Percentage-based padding */
-  font-size: min(4cqh, 2cqmax); /* Responsive text size */
-  transition: transform 0.2s, box-shadow 0.2s; /* Hover effects */
-  cursor: pointer;
-  font-family: 'Bangers', cursive; /* Apply comic font */
+    width: 48%; /* Leave space between buttons */
+    border: 0.4vh solid black; /* Thin outline */
+    border-radius: 1.5vh; /* Curved corners */
+    box-sizing: border-box;
+    box-shadow: 0.5vh 0.5vh 0.5vh rgba(0,0,0,0.3); /* Slight drop shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text within each button */
+    padding: 2%; /* Percentage-based padding */
+    font-size: min(4cqh, 2cqmax); /* Responsive text size */
+    transition: transform 0.2s, box-shadow 0.2s; /* Hover effects */
+    cursor: pointer;
+    font-family: 'Nunito', serif; /* Apply comic font */
+    font-weight: 800;
 }
 
 /* Hover effect for each faq-section */
@@ -239,7 +241,8 @@
     width: 80%;
     max-width: 500px;
     position: relative;
-    font-family: 'Bangers', cursive; /* Same font as questions */
+    font-family: 'Nunito', serif; /* Same font as questions */
+    font-weight: 800;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0.5vh 0.5vh 0.5vh rgba(0,0,0,0.3); /* Slight drop shadow */
@@ -254,7 +257,8 @@
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    font-family: 'Bangers', sans-serif;
+    font-family: 'Nunito', serif;
+    font-weight: 800;
     color: black;
 }
 
@@ -267,7 +271,8 @@
     border: none;
     font-size: 1em;
     cursor: pointer;
-    font-family: 'Bangers', sans-serif;
+    font-family: 'Nunito', serif;
+    font-weight: 800;
     color: black;
 }
 
@@ -275,5 +280,6 @@
 .modal-text {
     font-size: calc(0.8em + 0.5vw); /* Responsive text size */
     margin-top: 2%;
-    font-family: 'Bangers', cursive;
+    font-family: 'Nunito', serif;
+    font-weight: 800;
 }
