@@ -5,10 +5,17 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(to bottom, #fae0c9, #f49dd4);
+    /* background: linear-gradient(to bottom, #fae0c9, #f49dd4); */
     padding: 20px;
     box-sizing: border-box;
     min-height: 100vh;
+    background-image: url(../assets/hacklahoma_water_backgroundsquare.png);
+}
+
+/* IDK but Lucas threw this in */
+.live-page h1 {
+    font: italic bold 32px "Nunito", serif;
+    color: #ffffff;
 }
 
 /* -------------------------------
@@ -18,6 +25,8 @@
     width: 100%;
     display: none;
     /* Hidden by default */
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .desktop-container {
@@ -57,7 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background-color: rgb(172, 252, 255);
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
@@ -82,6 +91,10 @@
     flex: 1;
     margin: 0 10px;
     text-align: left;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .schedule-item-location {

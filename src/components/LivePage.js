@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LivePage.css';
 
-// Schedule events with location defaulting to "TBD"
+// Your schedule items
 const scheduleItems = [
   {
     time: "9:30am",
@@ -101,10 +101,18 @@ const scheduleItems = [
   },
 ];
 
-// Sample announcements
-const announcementItems = [
-  
-];
+// Find the index of the first item with time "12:00am"
+const midnightIndex = scheduleItems.findIndex(item => item.time === "12:00am");
+
+// Split the schedule into Saturday and Sunday lists
+const saturdayScheduleItems = midnightIndex !== -1 
+  ? scheduleItems.slice(0, midnightIndex) 
+  : scheduleItems;
+const sundayScheduleItems = midnightIndex !== -1 
+  ? scheduleItems.slice(midnightIndex) 
+  : [];
+
+const announcementItems = []; // Your announcement items
 
 const LivePage = () => {
   const [modalData, setModalData] = useState(null);
@@ -150,13 +158,17 @@ const LivePage = () => {
       {/* Desktop Layout */}
       <div className="live-page-desktop">
         <div className="desktop-container">
-          {/* Schedule on the left */}
+          {/* Schedule Section */}
           <div className="schedule-section">
-            <h1>Schedule</h1>
+            <h1>Saturday Schedule</h1>
             <div className="schedule-list-container">
               <ul className="schedule-list">
-                {scheduleItems.map((item, index) => (
-                  <li key={index} className="schedule-item" onClick={() => openModal(item, 'schedule')}>
+                {saturdayScheduleItems.map((item, index) => (
+                  <li 
+                    key={index} 
+                    className="schedule-item" 
+                    onClick={() => openModal(item, 'schedule')}
+                  >
                     <div className="schedule-item-time">{item.time}</div>
                     <div className="schedule-item-title">{item.title}</div>
                     <div className="schedule-item-location">{item.location || 'TBD'}</div>
@@ -165,12 +177,36 @@ const LivePage = () => {
               </ul>
             </div>
           </div>
-          {/* Announcements on the right */}
+
+          <div className="schedule-section">
+            <h1>Sunday Schedule</h1>
+            <div className="schedule-list-container">
+              <ul className="schedule-list">
+                {sundayScheduleItems.map((item, index) => (
+                  <li 
+                    key={index} 
+                    className="schedule-item" 
+                    onClick={() => openModal(item, 'schedule')}
+                  >
+                    <div className="schedule-item-time">{item.time}</div>
+                    <div className="schedule-item-title">{item.title}</div>
+                    <div className="schedule-item-location">{item.location || 'TBD'}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Announcements Section */}
           <div className="announcements-section">
             <h1>Announcements</h1>
             <ul className="announcements-list">
               {announcementItems.map((item, index) => (
-                <li key={index} className="announcement-item" onClick={() => openModal(item, 'announcement')}>
+                <li 
+                  key={index} 
+                  className="announcement-item" 
+                  onClick={() => openModal(item, 'announcement')}
+                >
                   <div className="announcement-item-time">{item.time}</div>
                   <div className="announcement-item-title">{item.title}</div>
                 </li>
@@ -187,20 +223,45 @@ const LivePage = () => {
           <h1>Announcements</h1>
           <ul className="announcements-list">
             {announcementItems.map((item, index) => (
-              <li key={index} className="announcement-item" onClick={() => openModal(item, 'announcement')}>
+              <li 
+                key={index} 
+                className="announcement-item" 
+                onClick={() => openModal(item, 'announcement')}
+              >
                 <div className="announcement-item-time">{item.time}</div>
                 <div className="announcement-item-title">{item.title}</div>
               </li>
             ))}
           </ul>
         </div>
-        {/* Schedule below */}
+
+        {/* Schedule Section */}
         <div className="schedule-section">
-          <h1>Schedule</h1>
+          <h1>Saturday Schedule</h1>
           <div className="schedule-list-container">
             <ul className="schedule-list">
-              {scheduleItems.map((item, index) => (
-                <li key={index} className="schedule-item" onClick={() => openModal(item, 'schedule')}>
+              {saturdayScheduleItems.map((item, index) => (
+                <li 
+                  key={index} 
+                  className="schedule-item" 
+                  onClick={() => openModal(item, 'schedule')}
+                >
+                  <div className="schedule-item-time">{item.time}</div>
+                  <div className="schedule-item-title">{item.title}</div>
+                  <div className="schedule-item-location">{item.location || 'TBD'}</div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <h1>Sunday Schedule</h1>
+          <div className="schedule-list-container">
+            <ul className="schedule-list">
+              {sundayScheduleItems.map((item, index) => (
+                <li 
+                  key={index} 
+                  className="schedule-item" 
+                  onClick={() => openModal(item, 'schedule')}
+                >
                   <div className="schedule-item-time">{item.time}</div>
                   <div className="schedule-item-title">{item.title}</div>
                   <div className="schedule-item-location">{item.location || 'TBD'}</div>

@@ -1,33 +1,93 @@
-/* Navigation.css */
+/* Default styling for "/" page */
 .main-nav {
-    background-color: pink;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  .main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Ensures list items are centered */
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .main-nav ul li {
-    margin-right: 1.5rem;
-  }
-  
-  .main-nav ul li a {
-    color: purple; 
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .main-nav ul li a:hover {
-    color: #627EEA;
-  }
+  background-color: pink;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  margin-right: 1.5rem;
+}
+
+.main-nav ul li a {
+  color: purple;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #627EEA;
+}
+
+/* Styling for the "/live" page: Cyan background and white text */
+.live-nav {
+  background-color: rgb(0, 199, 199);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.live-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.live-nav ul li {
+  margin-right: 1.5rem;
+}
+
+.live-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the "/builtonethereum" page: Gray background and yellow text */
+.build-nav {
+  background-color: gray;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.build-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.build-nav ul li {
+  margin-right: 1.5rem;
+}
+
+.build-nav ul li a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
