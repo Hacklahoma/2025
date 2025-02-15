@@ -6,115 +6,115 @@ const scheduleItems = [
   {
     time: "9:30am",
     title: "Doors Open / Check In",
-    location: "TBD",
+    location: "Devon Energy Hall",
     description: "Registration and check in. Please be on time!"
   },
   {
     time: "11:30am",
     title: "Opening Ceremony",
-    location: "Devon Atrium",
+    location: "Devon Energy Hall Atrium",
     description: "Welcome remarks and an introduction to the hackathon."
   },
   {
     time: "12:00pm",
     title: "Hacking Begins :)",
-    location: "TBD",
-    description: "Kick off the hackathon and start working on your projects."
+    location: "Devon 130",
+    description: "Start working on projects! Still looking for teammates? Join us for some team building in DEH 130!"
   },
   {
     time: "1:00pm",
     title: "Lunch",
-    location: "TBD",
+    location: "Devon Energy Hall",
     description: "Enjoy a catered lunch provided by the organizers."
   },
   {
     time: "2:00pm",
     title: "GitHub Copilot Workshop by MLH",
-    location: "TBD",
+    location: "Devon 120",
     description: "Learn how GitHub Copilot can boost your coding productivity."
   },
   {
     time: "3:00pm",
     title: "How to Build Effective AI Agents Workshop by Central.co",
-    location: "TBD",
+    location: "Devon 130",
     description: "Discover best practices for building AI agents."
   },
   {
     time: "4:00pm",
     title: "Built on Ethereum Workshop by Founder of BuidlGuidl",
-    location: "TBD",
+    location: "Devon 120",
     description: "Explore blockchain development and Ethereum-based applications."
   },
   {
     time: "5:00pm",
     title: "Interview Prep Workshop by Big Tech Industry Professional",
-    location: "TBD",
+    location: "Devon 130",
     description: "Gain insights on preparing for technical interviews."
   },
   {
     time: "6:00pm",
     title: "Intro to Linux Workshop by Nima",
-    location: "TBD",
+    location: "Devon 120",
     description: "Learn the basics of Linux and navigating the command line."
   },
   {
     time: "7:00pm",
     title: "Dinner",
-    location: "TBD",
+    location: "Devon Energy Hall",
     description: "Dinner will be served."
   },
   {
     time: "7:30pm",
     title: "Super Fun Mini Event :)",
-    location: "TBD",
+    location: "Devon 130",
     description: "You won't want to miss this! Be there!"
   },
   {
     time: "8:00pm",
     title: "Chess Tournament",
-    location: "TBD",
+    location: "Devon Energy Hall Atrium",
     description: "Join in for a friendly chess tournament."
   },
   {
     time: "9:00pm",
     title: "Super Smash Tournament",
-    location: "TBD",
+    location: "Devon Energy Hall Atrium",
     description: "Join in for a friendly Super Smash tournament!"
   },  
   {
     time: "12:00am",
     title: "Midnight Snack",
-    location: "TBD",
+    location: "Devon Energy Hall",
     description: "Grab a late-night snack to keep you going."
   },
   {
     time: "9:30am",
     title: "Brunch",
-    location: "TBD",
+    location: "Devon Energy Hall",
     description: "Enjoy a delicious brunch."
   },
   {
     time: "11:00am",
     title: "Devpost Submission (Soft) Deadline",
-    location: "TBD",
+    location: "Devpost",
     description: "Make sure to submit projects by noon!"
   },
   {
     time: "12:00pm",
     title: "Hacking Ends!",
-    location: "TBD",
+    location: "Devpost",
     description: "Wrap up your projects and prepare for final submissions."
   },
   {
     time: "12:30pm",
     title: "Judging / Project Expo",
-    location: "REPF 200",
+    location: "REPF 200 (2nd Floor)",
     description: "Judges deliberate and evaluate your projects."
   },
   {
     time: "2:30pm",
     title: "Closing Ceremony",
-    location: "TBD",
+    location: "Devon Energy Hall Atrium",
     description: "Winners are announced and the event concludes."
   },
 ];
