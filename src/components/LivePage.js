@@ -12,12 +12,12 @@ const scheduleItems = [
   {
     time: "11:30am",
     title: "Opening Ceremony",
-    location: "TBD",
+    location: "Devon Atrium",
     description: "Welcome remarks and an introduction to the hackathon."
   },
   {
     time: "12:00pm",
-    title: "Hacking Begins",
+    title: "Hacking Begins :)",
     location: "TBD",
     description: "Kick off the hackathon and start working on your projects."
   },
@@ -64,11 +64,23 @@ const scheduleItems = [
     description: "Dinner will be served."
   },
   {
+    time: "7:30pm",
+    title: "Super Fun Mini Event :)",
+    location: "TBD",
+    description: "You won't want to miss this! Be there!"
+  },
+  {
     time: "8:00pm",
     title: "Chess Tournament",
     location: "TBD",
     description: "Join in for a friendly chess tournament."
   },
+  {
+    time: "9:00pm",
+    title: "Super Smash Tournament",
+    location: "TBD",
+    description: "Join in for a friendly Super Smash tournament!"
+  },  
   {
     time: "12:00am",
     title: "Midnight Snack",
@@ -82,19 +94,25 @@ const scheduleItems = [
     description: "Enjoy a delicious brunch."
   },
   {
+    time: "11:00am",
+    title: "Devpost Submission (Soft) Deadline",
+    location: "TBD",
+    description: "Make sure to submit projects by noon!"
+  },
+  {
     time: "12:00pm",
-    title: "Hacking Ends",
+    title: "Hacking Ends!",
     location: "TBD",
     description: "Wrap up your projects and prepare for final submissions."
   },
   {
     time: "12:30pm",
-    title: "Judging",
-    location: "TBD",
+    title: "Judging / Project Expo",
+    location: "REPF 200",
     description: "Judges deliberate and evaluate your projects."
   },
   {
-    time: "2:00pm",
+    time: "2:30pm",
     title: "Closing Ceremony",
     location: "TBD",
     description: "Winners are announced and the event concludes."
