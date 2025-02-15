@@ -25,7 +25,7 @@ const scheduleItems = [
     time: "1:00pm",
     title: "Lunch",
     location: "Devon Energy Hall",
-    description: "Enjoy a catered lunch provided by the organizers."
+    description: "Chow down on some delicious shawarmas courtesy of Abu Omar Halal! (Chicken & vegan options, no beef)"
   },
   {
     time: "2:00pm",
