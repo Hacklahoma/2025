@@ -61,7 +61,7 @@ const scheduleItems = [
     time: "7:00pm",
     title: "Dinner",
     location: "Devon Energy Hall",
-    description: "Dinner will be served."
+    description: "Take a break and grab some pizza!"
   },
   {
     time: "7:30pm",
