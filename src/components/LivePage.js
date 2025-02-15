@@ -85,7 +85,7 @@ const scheduleItems = [
     time: "12:00am",
     title: "Midnight Snack",
     location: "Devon Energy Hall",
-    description: "Grab a late-night snack to keep you going."
+    description: "Grab some milk tea and cookies :O"
   },
   {
     time: "9:30am",
